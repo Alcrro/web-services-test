@@ -1,0 +1,68 @@
+import {
+  Search,
+  Rocket,
+  Users2,
+  Wrench,
+  ClipboardCheck,
+  ShoppingCart,
+  LayoutDashboard,
+  Users,
+  TrendingUp,
+  Bell,
+  BarChart3,
+  Shield,
+  Plug,
+  MessageSquare,
+  Calendar,
+  Folder,
+  File,
+  Server,
+  Clock,
+  Repeat,
+  Database,
+  Zap,
+  RotateCcw,
+  Activity,
+  Slash,
+  FileText,
+  Key,
+} from "lucide-react";
+import React, { useMemo } from "react";
+
+const ServicesListIconMapper = (): Record<string, React.ReactNode> => {
+  return useMemo(
+    () => ({
+      FaSearch: <Search />,
+      FaFileAlt: <File />,
+      FaRocket: <Rocket />,
+      FaUsers: <Users2 />,
+      FaTools: <Wrench />,
+      FaClipboard: <ClipboardCheck />,
+      FaServer: <Server />,
+      FaShoppingCart: <ShoppingCart />,
+      LayoutDashboard: <LayoutDashboard />,
+      Users: <Users />,
+      TrendingUp: <TrendingUp />,
+      Bell: <Bell />,
+      BarChart3: <BarChart3 />,
+      Shield: <Shield />,
+      Plug: <Plug />,
+      MessageSquare: <MessageSquare />,
+      Calendar: <Calendar />,
+      Folder: <Folder />,
+      Clock: <Clock />,
+      Repeat: <Repeat />,
+      Database: <Database />,
+      Zap: <Zap />,
+      RotateCcw: <RotateCcw />,
+      Activity: <Activity />,
+      Tool: <Wrench />,
+      Slash: <Slash />,
+      FileText: <FileText />,
+      Key: <Key />,
+    }),
+    []
+  );
+};
+
+export default ServicesListIconMapper;
