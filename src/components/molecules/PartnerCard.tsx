@@ -2,15 +2,12 @@ import { IHomePartners } from "@/shared/data/consts/homePage/homePageContent";
 import React, { FC } from "react";
 import style from "@/components/styles/partnerList.module.scss";
 import Image from "next/image";
+import { linkString } from "@/shared/utils/generatePartnerMarqueeLink";
 
 interface IHomePartnersProps {
   partner: IHomePartners;
 }
 const PartnerCard: FC<IHomePartnersProps> = ({ partner }) => {
-  const linkString = (link: string): string => {
-    const linkStr = link.replace(/(\.\w{2,}|[^\/\s]+\/+)/g, "");
-    return linkStr;
-  };
   return (
     <div className={`${style.marquee_item}`}>
       {!partner.logo && partner.link ? (
