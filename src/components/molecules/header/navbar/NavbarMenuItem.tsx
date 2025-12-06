@@ -1,5 +1,5 @@
 import { INavbarMenu } from "@/shared/data/consts/header/menu";
-import React, { FC } from "react";
+import { FC } from "react";
 import NavLink from "../../../atoms/NavLink";
 
 interface INavMenuItemProps {

@@ -1,4 +1,3 @@
-import React from "react";
 import OrdersList from "./OrdersList";
 
 import { fetchOrdersByClient } from "./services/fetchOrdersByClient";

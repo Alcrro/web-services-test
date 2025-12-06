@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import Button from "../../../shared/ui/Button";
 import { useRouter } from "next/navigation";
 import { useModalStore } from "@/context/modalStore";

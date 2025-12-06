@@ -1,5 +1,5 @@
 import { ServiceBenefitItem } from "@/shared/data/consts/servicePage/servicePageContent";
-import React from "react";
+
 import ServiceBenefitsTitle from "../../../atoms/service/ServiceBenefitsTitle";
 import ServiceBenefitsItem from "./ServiceBenefitsItem";
 

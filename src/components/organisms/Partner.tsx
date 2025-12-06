@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import style from "@/components/styles/partner.module.scss";
 import HomePartnerTitle from "../atoms/home/HomePartnerTitle";
 

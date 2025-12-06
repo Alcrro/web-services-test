@@ -1,4 +1,4 @@
-import React, { FC, Suspense } from "react";
+import { FC, Suspense } from "react";
 import { PortfolioPageContent } from "@/shared/data/consts/portfololioPage/portfolioPageContent";
 import HeroSection from "./portfolio/HeroSection";
 import PortfolioProjectsClient from "../molecules/portfolio/PortfolioProjectsClient";

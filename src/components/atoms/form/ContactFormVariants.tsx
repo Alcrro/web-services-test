@@ -1,7 +1,7 @@
 "use client";
 import { ContactFormField } from "@/shared/data/consts/contactPage/contactPageData";
 import { useModalStore } from "@/context/modalStore";
-import React, { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 
 interface ContactFormProps {
   fields: ContactFormField[];

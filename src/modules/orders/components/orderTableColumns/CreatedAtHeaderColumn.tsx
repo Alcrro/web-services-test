@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { ArrowUp, ArrowDown } from "lucide-react";
 import { useSortableColumn } from "../../../../shared/utils/handleSort";
 

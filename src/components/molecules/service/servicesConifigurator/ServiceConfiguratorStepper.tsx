@@ -1,6 +1,6 @@
 "use client";
 import { useServiceConfiguratorStore } from "@/context/useServiceConfiguratorStore";
-import React, { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import style from "@/components/styles/serviceConfiguratorStepper.module.scss";
 import { useParams } from "next/navigation";
 

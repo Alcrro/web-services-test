@@ -1,5 +1,4 @@
 import { formatPriceValue } from "@/shared/utils/formatServicesPrice";
-import React from "react";
 
 const PriceRow = ({
   description,

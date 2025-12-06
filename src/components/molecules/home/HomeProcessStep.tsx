@@ -2,7 +2,6 @@ import StepArrow from "@/components/atoms/home/HomeProcess/StepArrow";
 import StepCircle from "@/components/molecules/home/StepCircle";
 import StepNumber from "@/components/atoms/home/HomeProcess/StepNumber";
 import { IProcessSteps } from "@/shared/data/consts/homePage/homePageContent";
-import React from "react";
 
 interface HomeProcessStepProps {
   step: IProcessSteps;

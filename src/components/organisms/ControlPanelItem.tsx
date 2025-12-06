@@ -1,8 +1,9 @@
 "use client";
-import React, { useRef } from "react";
+import { useRef } from "react";
 import useCloseDiv from "@/shared/utils/useCloseDiv";
 import { useModalStore } from "@/context/modalStore";
 import { Users, ListCheck, ChevronRight } from "lucide-react";
+import React from "react";
 
 interface ControlPanelItemProps {
   name: string;

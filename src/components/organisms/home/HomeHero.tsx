@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import HomeHeroTitle from "../../atoms/home/HomeHeroTitle";
 import { IHomeHero } from "@/shared/data/consts/homePage/homePageContent";
 import HomeHeroSubtitle from "../../atoms/home/HomeHeroSubtitle";

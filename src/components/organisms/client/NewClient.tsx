@@ -1,4 +1,3 @@
-import React from "react";
 import style from "@/components/styles/clientContainerForm.module.scss";
 import Button from "@/shared/ui/Button";
 import ClientForm from "@/components/atoms/form/ClientForm";

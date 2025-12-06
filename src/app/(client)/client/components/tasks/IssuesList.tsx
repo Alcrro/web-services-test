@@ -1,6 +1,5 @@
 "use client";
 import { useQuery } from "@tanstack/react-query";
-import React from "react";
 
 async function fetchIssues() {
   const response = await fetch("http://localhost:3000/api/github/tasks", {

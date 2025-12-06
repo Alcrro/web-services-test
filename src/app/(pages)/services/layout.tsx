@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 import { Metadata } from "next";
 import { generateSEO } from "@/lib/seo";

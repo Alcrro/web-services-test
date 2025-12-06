@@ -5,9 +5,10 @@ import {
   getCoreRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-import React from "react";
+
 import { cn } from "@/lib/utils";
 import { PaginationSkeleton } from "./PaginationSkeleton";
+import { Fragment } from "react/jsx-runtime";
 
 interface TableColumnMeta {
   style?: React.CSSProperties;
@@ -59,7 +60,7 @@ const DefaultTableSkeleton = <T, TValue = unknown>({
               const isLastRow =
                 rowIndex === table.getRowModel().rows.length - 1;
               return (
-                <React.Fragment key={row.id}>
+                <Fragment key={row.id}>
                   <tr
                     className={` cursor transition-colors   ${
                       isLastRow ? "rounded-b-lg" : ""
@@ -132,7 +133,7 @@ const DefaultTableSkeleton = <T, TValue = unknown>({
                         ))}
                       </tr>
                     ))}
-                </React.Fragment>
+                </Fragment>
               );
             })}
             {/* 👇 Placeholder row to fill remaining height */}

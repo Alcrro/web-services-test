@@ -1,4 +1,4 @@
-import React from "react";
+
 import Configurator from "./Configurator";
 import { getDynamicComponent } from "@/shared/utils/getDynamicComponent";
 import ClientDetails from "./ClientDetails";

@@ -5,7 +5,6 @@ import ContactTrust from "@/components/molecules/contact/ContactTrust";
 import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 import { contactPageData } from "@/shared/data/consts/contactPage/contactPageData";
 import { Metadata } from "next";
-import React from "react";
 
 export async function getMetadata(): Promise<Metadata> {
   return {

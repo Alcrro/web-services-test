@@ -1,5 +1,5 @@
 import { ContactHeroSection } from "@/shared/data/consts/contactPage/contactPageData";
-import React from "react";
+
 import ContactTitle from "../../atoms/contact/ContactTitle";
 import ContactSubTitle from "../../atoms/contact/ContactSubTitle";
 import ContactButton from "../../atoms/buttons/ContactButton";

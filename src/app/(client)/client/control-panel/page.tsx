@@ -1,4 +1,3 @@
-import React from "react";
 import ClientSidebar from "../../../../components/organisms/ClientSidebar";
 import ClientPaneLayout from "@/components/templates/controlPanel/ControlPanelLayout";
 

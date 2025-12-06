@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "../../styles/invoiceTabe.module.scss";
 import InvoiceTableCell from "@/components/atoms/invoice/InvoiceTableCell";
 import InvoiceFeatureRows from "../../molecules/invoice/InvoiceFeaturerows";

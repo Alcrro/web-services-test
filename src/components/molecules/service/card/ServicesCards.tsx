@@ -1,4 +1,3 @@
-import React from "react";
 import style from "@/components/styles/servicesCards.module.scss";
 import ServiceCard from "./ServiceCard";
 import ServicesList from "./ServicesList";

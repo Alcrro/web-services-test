@@ -1,6 +1,6 @@
 import { ServiceFaqItem } from "@/shared/data/consts/servicePage/servicePageContent";
 import Description from "@/shared/ui/Description";
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface IServiceFaqItemProps {
   item: ServiceFaqItem;

@@ -2,7 +2,7 @@
 import { IFutureControlPanel } from "@/shared/data/administrator/futures/futureControlPanel/futureControlPanelData";
 import { ChartBar, PlusCircleIcon, Users } from "lucide-react";
 import { usePathname } from "next/navigation";
-import React, { FC, ReactNode, useMemo } from "react";
+import { FC, ReactNode, useMemo } from "react";
 import Link from "next/link";
 
 interface FutureControlPanelItemProps {

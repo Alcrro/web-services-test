@@ -1,6 +1,5 @@
-import { Download } from "lucide-react";
-import React from "react";
 import Button from "../../../shared/ui/Button";
+import { Download } from "lucide-react";
 
 const DownloadButton = ({ actionHandle }: { actionHandle: () => void }) => {
   return (

@@ -1,6 +1,6 @@
 import { ServiceProcessStep } from "@/shared/data/consts/servicePage/servicePageContent";
 import Title from "@/shared/ui/Title";
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface IServiceProcessStepItemProps {
   step: ServiceProcessStep;

@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const ViewOrder = ({ id }: { id: string }) => {
   const [pdfUrl, setPdfUrl] = useState<string | null>(null);

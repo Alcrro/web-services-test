@@ -1,4 +1,3 @@
-import React from "react";
 import ServiceConfiguratorStepper from "./ServiceConfiguratorStepper";
 
 const ServiceHeader = () => {

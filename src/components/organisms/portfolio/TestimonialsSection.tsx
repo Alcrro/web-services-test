@@ -1,7 +1,6 @@
 import TestimonialsTitle from "@/components/atoms/portfolio/TestimonialsTitle";
 import TestimonialReviewsItem from "@/components/molecules/portfolio/TestimonialReviewsItem";
 import { IHomeTestimonial } from "@/shared/data/consts/homePage/homePageContent";
-import React from "react";
 
 const TestimonialsSection = ({
   testimonials,

@@ -1,7 +1,7 @@
 import { IServiceOrderTable } from "@/modules/services/domain/types/service.types";
 import { formatPriceValue } from "@/shared/utils/formatServicesPrice";
 import { StatusIcon } from "@/shared/utils/statusIcon";
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface IMyOrderCardProps {
   order: IServiceOrderTable;

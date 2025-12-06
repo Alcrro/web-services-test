@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { ContactTestimonial } from "@/shared/data/consts/contactPage/contactPageData";
 import TrustContactImage from "../../atoms/contact/TrustContactImage";
 import TrustContactName from "../../atoms/contact/TrustContactName";

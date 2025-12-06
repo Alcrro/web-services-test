@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import PortfolioCard from "./PortfolioCard";
 import { PortfolioProject } from "@/shared/data/consts/portfololioPage/portfolioPageContent";
 import PortfolioProjectCardSkeleton from "@/components/skeletons/PortfolioProjectCardSkeleton";

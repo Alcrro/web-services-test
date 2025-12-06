@@ -1,5 +1,5 @@
 "use client";
-import React, { ReactNode, useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 import { ThemeProvider as NextThemeProvider, useTheme } from "next-themes";
 import { useThemeStore } from "./themeStore";
 

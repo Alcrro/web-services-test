@@ -1,4 +1,3 @@
-import React from "react";
 import DefaultIcon from "../../../shared/ui/icons/defaultIcon";
 
 const HomeHeroImage = ({

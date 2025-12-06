@@ -1,5 +1,3 @@
-import React from "react";
-
 const ConfigureReviewTitle = () => {
   return <h2 className="text-xl font-semibold">Review & Export</h2>;
 };

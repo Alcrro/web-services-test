@@ -1,4 +1,3 @@
-import React from "react";
 import IconSearchNavbar from "./IconSearchNavbar";
 import SearchBarModal from "./SearchBarModal";
 

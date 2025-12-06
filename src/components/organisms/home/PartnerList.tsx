@@ -1,5 +1,5 @@
 import { IHomePartners } from "@/shared/data/consts/homePage/homePageContent";
-import React from "react";
+
 import PartnerCard from "../../molecules/PartnerCard";
 import Partner from "../Partner";
 

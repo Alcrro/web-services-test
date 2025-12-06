@@ -10,7 +10,7 @@ import {
   PopoverContent,
 } from "@radix-ui/react-popover";
 import { Cell } from "@tanstack/react-table";
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface IIncludeFHeProps<TData> {
   getValue: Cell<TData, unknown>["getValue"];

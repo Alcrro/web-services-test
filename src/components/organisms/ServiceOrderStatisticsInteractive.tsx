@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import { useState } from "react";
 import ServiceSummaryV2 from "../molecules/gants/ServiceSummaryV2";
 import { formatPriceValue } from "@/shared/utils/formatServicesPrice";
 import { IServiceOrderTable } from "@/modules/services/domain/types/service.types";

@@ -1,7 +1,6 @@
 import ServicesCards from "@/components/molecules/service/card/ServicesCards";
 import { getFutureService } from "@/services/api/services/servicesApi";
 import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
-import React from "react";
 
 const Services = async () => {
   const services = await getDataCachedFromDB(

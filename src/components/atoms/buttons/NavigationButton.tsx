@@ -1,6 +1,6 @@
 import { cn } from "@/lib/utils";
 import Button from "@/shared/ui/Button";
-import React, { FC, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 
 interface INavigationBtnProps {
   variant?: string;

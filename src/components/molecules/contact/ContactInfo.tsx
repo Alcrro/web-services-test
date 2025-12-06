@@ -1,4 +1,3 @@
-import React from "react";
 import { ContactInfo as IContactInfo } from "@/shared/data/consts/contactPage/contactPageData";
 import ContactTitle from "../../atoms/contact/ContactTitle";
 import ContactRow from "./ContactRow";

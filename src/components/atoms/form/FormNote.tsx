@@ -1,6 +1,6 @@
 // atoms/contact/FormNote.tsx
 import Description from "@/shared/ui/Description";
-import React, { FC } from "react";
+import { FC } from "react";
 
 const FormNote: FC<{ note: string }> = ({ note }) => (
   <Description

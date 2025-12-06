@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import style from "@/components/styles/header.module.scss";
 import { useModalStore } from "@/context/modalStore";
 import Button from "@/shared/ui/Button";

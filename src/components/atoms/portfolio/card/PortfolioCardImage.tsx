@@ -1,5 +1,4 @@
 import DefaultIcon from "@/shared/ui/icons/defaultIcon";
-import React from "react";
 
 const PortfolioCardImage = ({ image, alt }: { image: string; alt: string }) => {
   return (

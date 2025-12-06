@@ -2,7 +2,7 @@
 import Button from "@/shared/ui/Button";
 import { ArrowLeftCircle, ArrowRightCircle, StepForward } from "lucide-react";
 import { usePathname, useRouter } from "next/navigation";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 
 const Breadcrumbs = () => {
   const pathname = usePathname();

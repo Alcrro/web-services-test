@@ -1,7 +1,7 @@
 import { futureDashboardData } from "@/shared/data/administrator/futures/futureDashboard/futureDashboardData";
 import ControlPanel from "@/components/molecules/ControlPanel";
 import ClientPanelLayout from "@/components/templates/controlPanel/ControlPanelLayout";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 const layout = ({ children }: { children: ReactNode }) => {
   const cpArray = futureDashboardData; // se încarcă pe server

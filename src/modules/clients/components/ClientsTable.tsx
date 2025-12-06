@@ -1,6 +1,5 @@
 import { getClientsAPI } from "@/services/api/client/clientApi";
 import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
-import React from "react";
 import ClientsTableClient from "../../../components/organisms/client/ClientsTableClient";
 import { mapSearchParamsOptions } from "@/modules/orders/infrastructure/searchParamsToFilter";
 import {

@@ -1,5 +1,5 @@
 import { IFooterChildren } from "@/shared/data/consts/footer/footerData";
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface IFooterChildrenProps {
   items: IFooterChildren[];

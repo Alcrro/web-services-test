@@ -1,6 +1,6 @@
 // atoms/contact/FormSuccess.tsx
 import Description from "@/shared/ui/Description";
-import React, { FC } from "react";
+import { FC } from "react";
 
 const FormSuccess: FC<{ message: string }> = ({ message }) => (
   <Description

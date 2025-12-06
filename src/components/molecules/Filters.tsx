@@ -1,5 +1,5 @@
 import { PortfolioFilterItem } from "@/shared/data/consts/portfololioPage/portfolioPageContent";
-import React, { FC } from "react";
+import { FC } from "react";
 import PortfolioFiltersButton from "../atoms/buttons/PortfolioFiltersButton";
 
 interface FiltersProps {

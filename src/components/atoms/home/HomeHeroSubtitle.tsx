@@ -1,4 +1,3 @@
-import React from "react";
 import style from "@/components/styles/homeHeroTitle.module.scss";
 import Title from "../../../shared/ui/Title";
 

@@ -1,5 +1,5 @@
 // atoms/buttons/FormButton.tsx
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface FormButtonProps {
   text: string;

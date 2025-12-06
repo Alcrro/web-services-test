@@ -1,4 +1,3 @@
-import React from "react";
 import { IPriceCalculated } from "../../../molecules/ConfigureReviewList";
 import PriceRow from "../../../molecules/PriceRow";
 import Title from "@/shared/ui/Title";

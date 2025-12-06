@@ -1,6 +1,6 @@
 "use client";
 import Button from "@/shared/ui/Button";
-import React, { FormEvent } from "react";
+import { FormEvent } from "react";
 import Title from "../login/components/Title";
 
 const API = process.env.NEXT_PUBLIC_API!;

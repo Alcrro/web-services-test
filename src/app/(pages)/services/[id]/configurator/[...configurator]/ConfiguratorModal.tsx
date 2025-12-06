@@ -1,6 +1,6 @@
 "use client";
 import { useModalStore } from "@/context/modalStore";
-import React, { ReactNode, useEffect } from "react";
+import { ReactNode, useEffect } from "react";
 
 const ConfiguratorModal = ({ children }: { children: ReactNode }) => {
   const { modals, close } = useModalStore();

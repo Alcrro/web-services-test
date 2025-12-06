@@ -1,4 +1,3 @@
-import React from "react";
 import style from "@/components/styles/header.module.scss";
 import ToggleButton from "../atoms/buttons/ToggleNavbarMenuButton";
 import ThemeToggle from "../atoms/buttons/ThemeToggle";

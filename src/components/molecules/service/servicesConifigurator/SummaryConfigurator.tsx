@@ -4,7 +4,6 @@ import ConfigureReviewList from "@/components/molecules/ConfigureReviewList";
 import { useServiceConfiguratorStore } from "@/context/useServiceConfiguratorStore";
 import { IService } from "@/modules/services/domain/types/service.types";
 import { calculatePrice } from "@/shared/utils/serviceConfigurationHelper";
-import React from "react";
 
 const SummaryConfigurator = ({ services }: { services?: IService }) => {
   const { quantity, selectedOptions } = useServiceConfiguratorStore(

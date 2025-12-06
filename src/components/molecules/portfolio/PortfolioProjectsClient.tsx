@@ -3,7 +3,7 @@ import {
   PortfolioFilterItem,
   PortfolioProject,
 } from "@/shared/data/consts/portfololioPage/portfolioPageContent";
-import React, { useState } from "react";
+import { useState } from "react";
 import Filters from "../Filters";
 import ProjectsGrid from "./ProjectsGrid";
 import { useRouter, useSearchParams } from "next/navigation";

@@ -1,9 +1,11 @@
 // components/molecules/invoice/InvoiceFeatureRows.tsx
-import React from "react";
+
 import InvoiceTableCell from "@/components/atoms/invoice/InvoiceTableCell";
 import { IServiceOrderItem } from "@/modules/orders/domain/types/order.types";
 import { formatPriceValue } from "@/shared/utils/formatServicesPrice";
 import style from "../../../components/styles/invoiceFeatureRows.module.scss";
+import React from "react";
+
 interface Props {
   includedFeatures?: IServiceOrderItem[];
   extraFeatures?: IServiceOrderItem[];

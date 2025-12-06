@@ -1,5 +1,4 @@
 import { ContactTrust as IContactTrust } from "@/shared/data/consts/contactPage/contactPageData";
-import React from "react";
 import TrustContactCard from "./TrustContactCard";
 import Description from "@/shared/ui/Description";
 

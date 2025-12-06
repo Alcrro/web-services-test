@@ -1,5 +1,3 @@
-import React from "react";
-
 const InvoiceTableBody = (
   // { label }: { label: string },
   description: string

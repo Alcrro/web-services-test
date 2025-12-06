@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import React, { FC } from "react";
+import { FC } from "react";
 import style from "@/components/styles/navLink.module.scss";
 
 interface NavLinkProps {

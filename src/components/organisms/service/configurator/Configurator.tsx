@@ -3,8 +3,6 @@ import ConfigureFeaturesTitle from "@/components/molecules/service/servicesConif
 import ServiceFeatureOptionContainer from "@/components/molecules/service/servicesConifigurator/ServiceFeatureOptionContainer";
 import { IService } from "@/modules/services/domain/types/service.types";
 
-import React from "react";
-
 const Configurator: React.FC<{ services?: IService }> = ({ services }) => {
   if (!services) return null; // or fallback
   const includedFeatures = services.serviceFeatures.filter(

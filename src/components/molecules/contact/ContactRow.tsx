@@ -1,4 +1,3 @@
-import React from "react";
 import ContactLabel from "../../atoms/contact/info/ContactLabel";
 import ContactValue from "../../atoms/contact/info/ContactValue";
 

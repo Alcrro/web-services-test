@@ -1,8 +1,6 @@
 import InvoiceMetaDescription from "@/components/atoms/invoice/InvoiceMetaDescription";
 import { companyDetails } from "@/shared/data/consts/companyDetails/companyDetails";
 
-import React from "react";
-
 const InvoiceMetaCompany = () => {
   const { name, email, phone, CUI } = companyDetails;
   return (

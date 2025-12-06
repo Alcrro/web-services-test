@@ -1,5 +1,5 @@
 import { navbarItems } from "@/shared/data/administrator/navbar/NavbarData";
-import React from "react";
+
 import SearchBar, { SearchItemProps } from "../molecules/SearchBar";
 import NotificationItem, {
   NotificationItemProps,

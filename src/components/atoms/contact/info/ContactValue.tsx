@@ -1,5 +1,3 @@
-import React from "react";
-
 interface ContactValueProps {
   value: string | number;
 }

@@ -1,5 +1,3 @@
-import React from "react";
-
 interface StepCircleProps {
   title: string;
   description: string;

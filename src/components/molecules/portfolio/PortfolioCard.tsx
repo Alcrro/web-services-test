@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import { PortfolioProject } from "@/shared/data/consts/portfololioPage/portfolioPageContent";
 import PortfolioCardImage from "@/components/atoms/portfolio/card/PortfolioCardImage";
 import PortfolioCardTitle from "@/components/atoms/portfolio/card/PortfolioCardTitle";

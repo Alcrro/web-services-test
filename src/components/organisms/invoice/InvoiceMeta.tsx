@@ -1,5 +1,5 @@
 import { IClient } from "@/modules/clients/domain/types/client.types";
-import React, { FC } from "react";
+import { FC } from "react";
 import InvoiceMetaClient from "../../molecules/invoice/InvoiceMetaClient";
 import InvoiceMetaCompany from "../../molecules/invoice/InvoiceMetaCompany";
 type InvoiceMetaProps = {

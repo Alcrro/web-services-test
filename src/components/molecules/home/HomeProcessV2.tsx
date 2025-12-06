@@ -1,6 +1,6 @@
 import HomeProcessStep from "@/components/molecules/home/HomeProcessStep";
 import { IProcessSteps } from "@/shared/data/consts/homePage/homePageContent";
-import React, { Fragment } from "react";
+import { Fragment } from "react";
 
 const HomeProcessV2 = ({ steps }: { steps: IProcessSteps[] }) => {
   return (

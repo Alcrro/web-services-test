@@ -1,5 +1,3 @@
-import React from "react";
-
 const PortfolioHeroSubTitle = ({ subtitle }: { subtitle: string }) => {
   return (
     <p className="text-lg" style={{ color: "var(--color-text-secondary)" }}>

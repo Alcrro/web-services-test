@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import PortfolioHeroTitle from "../../atoms/portfolio/PortfolioHeroTitle";
 import PortfolioHeroSubTitle from "../../atoms/portfolio/PortfolioHeroSubTitle";
 import PortfolioHeroButton from "../../atoms/buttons/PortfolioHeroButton";

@@ -1,4 +1,3 @@
-import React from "react";
 import { IService } from "../../domain/types/service.types";
 
 const ServiceCard = ({ serviceCard }: { serviceCard: IService }) => {

@@ -1,7 +1,7 @@
 "use client";
 import { useModalStore } from "@/context/modalStore";
 import Button from "@/shared/ui/Button";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 const BoundaryProvider = ({ children }: { children: ReactNode }) => {
   const { toggle } = useModalStore((store) => store);

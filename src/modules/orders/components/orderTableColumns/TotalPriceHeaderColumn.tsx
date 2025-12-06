@@ -1,6 +1,6 @@
 "use client";
 import { ArrowDown, ArrowUp } from "lucide-react";
-import React from "react";
+
 import { useSortableColumn } from "../../../../shared/utils/handleSort";
 
 const TotalPriceHeaderColumn = () => {

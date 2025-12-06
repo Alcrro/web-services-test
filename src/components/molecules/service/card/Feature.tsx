@@ -1,5 +1,5 @@
 import { Plus } from "lucide-react";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 const Feature = ({
   feature,

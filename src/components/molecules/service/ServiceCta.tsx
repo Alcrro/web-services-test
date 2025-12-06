@@ -1,4 +1,3 @@
-import React from "react";
 import { ServiceCtaSection } from "@/shared/data/consts/servicePage/servicePageContent";
 import Title from "@/shared/ui/Title";
 import ServiceCtaButton from "../../atoms/buttons/ServiceCtaButton";

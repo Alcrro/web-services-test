@@ -58,6 +58,7 @@
     "eslint-config-prettier": "^10.1.8",
     "prisma": "^6.16.2",
     "tailwindcss": "^4.1.13",
+    "ts-morph": "^27.0.2",
     "ts-node": "^10.9.2",
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.9.3",

@@ -1,6 +1,6 @@
 "use client";
 import { IServiceFeature } from "@/modules/services/domain/types/service.types";
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import ServiceOptionRow from "./ServiceOptionRow";
 import { useModalStore } from "@/context/modalStore";
 import { useServiceConfiguratorStore } from "@/context/useServiceConfiguratorStore";

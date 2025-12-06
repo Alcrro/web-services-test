@@ -1,5 +1,5 @@
 import Button from "@/shared/ui/Button";
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface IServiceCtaHeroBtnProps {
   hero: { href: string; text: string };

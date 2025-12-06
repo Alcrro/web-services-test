@@ -1,6 +1,6 @@
 "use client";
 import { useModalStore } from "@/context/modalStore";
-import React, { ReactNode, useRef } from "react";
+import { ReactNode, useRef } from "react";
 import ReactDOM from "react-dom";
 
 const Boundary = ({

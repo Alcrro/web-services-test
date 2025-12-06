@@ -1,4 +1,3 @@
-import React from "react";
 import { SidebarItem } from "./ClientSidebarListItem";
 import { sidebarSections } from "@/shared/data/consts/clientDashboard/sidebarSectionsData";
 

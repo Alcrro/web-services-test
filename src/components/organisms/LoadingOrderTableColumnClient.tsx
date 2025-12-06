@@ -3,7 +3,7 @@ import DefaultTableSkeleton from "@/components/skeletons/DefaultTableSkeleton";
 import { getOrderColumns } from "@/modules/orders/components/OrderTableColumn";
 import { IServiceOrderTable } from "@/modules/services/domain/types/service.types";
 
-import React, { FC } from "react";
+import { FC } from "react";
 interface ILoadingServiceOrderTableProps {
   initialData: IServiceOrderTable[];
   meta: number;

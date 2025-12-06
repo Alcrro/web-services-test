@@ -1,4 +1,3 @@
-import React from "react";
 import FutureControlPanel from "./FutureControlPanel";
 import ControlPanelItem from "../organisms/ControlPanelItem";
 

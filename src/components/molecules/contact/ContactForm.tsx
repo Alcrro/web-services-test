@@ -2,7 +2,7 @@ import {
   contactPageData,
   ContactForm as IContactForm,
 } from "@/shared/data/consts/contactPage/contactPageData";
-import React from "react";
+
 import FormVariantsV2 from "../../organisms/FormVariantsV2";
 
 const ContactForm = ({ form }: { form: IContactForm }) => {

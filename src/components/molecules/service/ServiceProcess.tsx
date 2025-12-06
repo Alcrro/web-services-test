@@ -1,6 +1,6 @@
 import { ServiceProcessSection } from "@/shared/data/consts/servicePage/servicePageContent";
 import Title from "@/shared/ui/Title";
-import React from "react";
+
 import ServicesProcessStepsListItem from "./ServicesProcessStepsListItem";
 
 const ServiceProcess = ({ process }: { process: ServiceProcessSection }) => {

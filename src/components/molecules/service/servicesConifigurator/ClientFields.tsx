@@ -1,4 +1,3 @@
-import React from "react";
 import DefaultFormLabel from "../../../../shared/ui/DefaultFormLabel";
 import { clientFields } from "@/shared/data/consts/clientFormFieldData";
 

@@ -1,5 +1,3 @@
-import React from "react";
-
 const ConfigureFeaturesTitle = ({ name }: { name: string }) => {
   return (
     <h2 className="text-xl font-semibold">

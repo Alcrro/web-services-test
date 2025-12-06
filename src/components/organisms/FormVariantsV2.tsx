@@ -1,5 +1,5 @@
 "use client";
-import React, { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState } from "react";
 import { useModalStore } from "@/context/modalStore";
 import { ContactFormField } from "@/shared/data/consts/contactPage/contactPageData";
 import FormNote from "@/components/atoms/form/FormNote";

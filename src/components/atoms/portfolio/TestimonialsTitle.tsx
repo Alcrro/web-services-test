@@ -1,5 +1,4 @@
 import Title from "@/shared/ui/Title";
-import React from "react";
 
 const TestimonialsTitle = ({ title }: { title: string }) => {
   return (

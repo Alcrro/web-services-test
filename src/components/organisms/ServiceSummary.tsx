@@ -1,7 +1,6 @@
 import { useServiceConfiguratorStore } from "@/context/useServiceConfiguratorStore";
 import { IService } from "@/modules/services/domain/types/service.types";
 import { calculatePrice } from "@/shared/utils/serviceConfigurationHelper";
-import React from "react";
 
 const ServiceSummary = ({ service }: { service: IService }) => {
   const selectedOptions = useServiceConfiguratorStore((s) => s.selectedOptions);

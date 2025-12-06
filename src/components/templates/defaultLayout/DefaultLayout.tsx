@@ -1,4 +1,4 @@
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import style from "../../styles/defaultLayout.module.scss";
 import Footer from "@/components/organisms/Footer";
 import PublicHeader from "@/components/organisms/PublicHeader";

@@ -1,4 +1,3 @@
-import React from "react";
 import { ServiceHeroSection } from "@/shared/data/consts/servicePage/servicePageContent";
 
 import ServiceHeroTitle from "../../atoms/service/ServiceHeroTitle";

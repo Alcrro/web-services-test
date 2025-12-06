@@ -1,4 +1,3 @@
-import React from "react";
 import DefaultIcon from "../../../shared/ui/icons/defaultIcon";
 import { initials } from "@/shared/utils/initials";
 import Description from "@/shared/ui/Description";

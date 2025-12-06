@@ -1,6 +1,6 @@
 "use client";
 import { useModalStore } from "@/context/modalStore";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import style from "@/components/styles/navbarMenu.module.scss";
 const NavbarMenuModal = ({ children }: { children: ReactNode }) => {
   const modals = useModalStore((store) => store.modals);

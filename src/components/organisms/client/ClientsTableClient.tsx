@@ -4,7 +4,7 @@ import { IClient } from "@/modules/clients/domain/types/client.types";
 import { IMetaPagination } from "@/modules/globals/types/types";
 import { createColumnRegistry } from "@/modules/orders/components/orderTableColumns/columnCellsRegistry";
 import { ColumnDef } from "@tanstack/react-table";
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface IClientTableClientProps {
   data: IClient[];

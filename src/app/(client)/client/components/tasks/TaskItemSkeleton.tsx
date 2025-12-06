@@ -1,6 +1,6 @@
 import { ITask } from "@/modules/tasks/domain/types/task.types";
 import { STATUS_TASKS_ICON_MAP } from "@/shared/data/mappers/orderTasksStatusIconMapper";
-import React from "react";
+
 import style from "@/components/styles/tasksList.module.scss";
 const TaskItemSkeleton = ({ tasks }: { tasks: ITask[] }) => {
   return (

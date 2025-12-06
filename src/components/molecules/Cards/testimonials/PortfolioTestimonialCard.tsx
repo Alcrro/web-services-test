@@ -2,7 +2,6 @@ import TestimonialAvatar from "@/components/atoms/testimonials/TestimonialAvatar
 import TestimonialText from "@/components/atoms/testimonials/TestimonialText";
 import Description from "@/shared/ui/Description";
 import Title from "@/shared/ui/Title";
-import React from "react";
 
 interface TestimonialCardProps {
   name: string;

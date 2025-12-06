@@ -1,4 +1,3 @@
-import React from "react";
 import Tasks from "./Tasks";
 import SingleTaskView from "./SingleTaskView";
 

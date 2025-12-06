@@ -1,7 +1,7 @@
 "use client";
 import { useModalStore } from "@/context/modalStore";
 import Button from "@/shared/ui/Button";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import { CgClose } from "react-icons/cg";
 
 const SearchBarModal = ({ children }: { children: ReactNode }) => {

@@ -1,7 +1,6 @@
 import { useServiceConfiguratorStore } from "@/context/useServiceConfiguratorStore";
 import { IServiceFeature } from "@/modules/services/domain/types/service.types";
 import { formatPriceValue } from "@/shared/utils/formatServicesPrice";
-import React from "react";
 
 const ExportPreviewCard = ({
   includedServices,

@@ -1,7 +1,5 @@
 import OrdersTable from "@/modules/orders/components/OrdersTable";
 
-import React from "react";
-
 export interface OrderTablePageProps {
   searchParams?: Record<string, string | string[]>;
 }

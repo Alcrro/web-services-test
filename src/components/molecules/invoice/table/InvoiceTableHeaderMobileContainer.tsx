@@ -1,7 +1,6 @@
 import InvoiceTableCell from "@/components/atoms/invoice/InvoiceTableCell";
 import { IServiceOrder } from "@/modules/orders/domain/types/order.types";
 import { formatPriceValue } from "@/shared/utils/formatServicesPrice";
-import React from "react";
 
 const InvoiceTableHeaderMobileContainer = ({
   order,

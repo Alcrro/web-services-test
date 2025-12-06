@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import React, { FC, HTMLAttributes, ReactNode } from "react";
+import { FC, HTMLAttributes, ReactNode } from "react";
 
 type TextElements = "p" | "span" | "small" | "strong" | "label" | "em" | "div";
 interface IDescriptionProps extends HTMLAttributes<HTMLElement> {

@@ -1,5 +1,3 @@
-import React from "react";
-
 const PortfolioCardSkeleton = () => (
   <div
     className="portfolio-card pointer-events-none"

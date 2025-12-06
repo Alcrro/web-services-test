@@ -1,7 +1,6 @@
 import InvoiceTableCell from "@/components/atoms/invoice/InvoiceTableCell";
 import { cn } from "@/lib/utils";
 import { formatPriceValue } from "@/shared/utils/formatServicesPrice";
-import React from "react";
 
 const InvoiceTableRowPrice = ({
   description,

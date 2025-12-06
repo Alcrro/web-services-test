@@ -8,7 +8,6 @@ import { mapSearchParamsOptions } from "@/modules/orders/infrastructure/searchPa
 import { ordersTableMapper } from "@/modules/orders/infrastructure/serviceOrderMapper";
 import { getServiceOrder } from "@/services/api/services/servicesApi";
 import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
-import React from "react";
 import MyOrderCard from "../MyOrderCard";
 
 const ActiveProjects = async ({

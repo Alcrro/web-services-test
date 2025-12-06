@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import React, { ElementType, FC, HTMLAttributes, ReactNode } from "react";
+import { ElementType, FC, HTMLAttributes, ReactNode } from "react";
 
 interface ITitleProps extends HTMLAttributes<HTMLHeadingElement> {
   children: ReactNode;

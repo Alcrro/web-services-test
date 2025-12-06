@@ -1,5 +1,5 @@
 import { IHomeProcess } from "@/shared/data/consts/homePage/homePageContent";
-import React from "react";
+
 import { FaNetworkWired } from "react-icons/fa";
 import HomeProcessV2 from "../../molecules/home/HomeProcessV2";
 

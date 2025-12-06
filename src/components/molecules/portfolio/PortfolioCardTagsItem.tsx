@@ -1,6 +1,5 @@
 import { IconMapper } from "@/shared/data/consts/portfololioPage/iconMapper";
 import { PortfolioTag } from "@/shared/data/consts/portfololioPage/portfolioPageContent";
-import React from "react";
 
 const PortfolioTagsItem = ({ tag }: { tag: PortfolioTag }) => {
   return (

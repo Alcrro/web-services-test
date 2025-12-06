@@ -6,7 +6,7 @@ import {
   PopoverTrigger,
   PopoverContent,
 } from "@radix-ui/react-popover";
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 import {
   IServiceOrder,

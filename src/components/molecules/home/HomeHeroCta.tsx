@@ -1,6 +1,5 @@
 import Button from "@/shared/ui/Button";
 import { homePageContent } from "@/shared/data/consts/homePage/homePageContent";
-import React from "react";
 
 const HomeHeroCta = () => {
   return (

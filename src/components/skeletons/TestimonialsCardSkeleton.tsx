@@ -1,5 +1,3 @@
-import React from "react";
-
 const TestimonialsCardSkeleton = () => {
   return (
     <div className="flex flex-col gap-4 animate-pulse">

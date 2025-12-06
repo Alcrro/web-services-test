@@ -1,4 +1,3 @@
-import React from "react";
 import { futureControlPanelData } from "@/shared/data/administrator/futures/futureControlPanel/futureControlPanelData";
 import FutureControlPanelItem from "./FutureControlPanelItem";
 

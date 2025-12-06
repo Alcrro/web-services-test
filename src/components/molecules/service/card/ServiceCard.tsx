@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 import style from "@/components/styles/serviceCard.module.scss";
 import ServicesPrice from "../../../atoms/service/ServicesPrice";
 import ServiceChoseButton from "../../../atoms/buttons/ServiceChoseButton";

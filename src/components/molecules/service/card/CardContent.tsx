@@ -1,4 +1,4 @@
-import React, { FC, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 import ServiceCardHeader from "../../Cards/services/ServiceCardHeader";
 interface ICardContentProps {
   children: ReactNode;

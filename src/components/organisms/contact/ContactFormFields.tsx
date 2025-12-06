@@ -1,4 +1,3 @@
-import React from "react";
 import { ContactFormField } from "@/shared/data/consts/contactPage/contactPageData";
 import ContactFormLabel from "../../atoms/contact/form/ContactFormLabel";
 import ContactFormTextarea from "../../atoms/contact/form/ContactFormTextarea";

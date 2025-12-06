@@ -1,5 +1,5 @@
 "use client";
-import React, { ReactNode, useLayoutEffect, useRef, useState } from "react";
+import { ReactNode, useLayoutEffect, useRef, useState } from "react";
 import styles from "@/components/styles/testimonialCarouselV2.module.scss";
 import NavigationButton from "@/components/atoms/buttons/NavigationButton";
 import { FaArrowAltCircleLeft, FaArrowCircleRight } from "react-icons/fa";

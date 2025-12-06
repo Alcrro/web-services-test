@@ -1,7 +1,6 @@
 // ActivityList.tsx
 "use client";
 
-import React from "react";
 import Activity from "./Activity";
 import { useQuery } from "@tanstack/react-query";
 

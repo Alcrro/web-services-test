@@ -1,5 +1,5 @@
 import { useServiceConfiguratorStore } from "@/context/useServiceConfiguratorStore";
-import React, { FC } from "react";
+import { FC } from "react";
 import ConfigReviewRow from "./PriceRow";
 
 export interface IPriceCalculated {

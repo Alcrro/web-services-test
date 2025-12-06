@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import React, { FC, HTMLAttributes, ReactNode } from "react";
+import { FC, HTMLAttributes, ReactNode } from "react";
 
 interface IDefaultFormProps extends HTMLAttributes<HTMLFormElement> {
   children: ReactNode;

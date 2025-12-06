@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import PortfolioCtaBtn from "@/components/atoms/portfolio/PortfolioCtaBtn";
 import PortfolioCtaTitle from "@/components/atoms/portfolio/PortfolioCtaTitle";
 interface CTASectionProps {

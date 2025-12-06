@@ -1,7 +1,7 @@
 "use client";
 import { addClientApi } from "@/services/api/client/clientApi";
 import DefaultForm from "@/shared/ui/DefaultForm";
-import React, { FormEvent, ReactNode } from "react";
+import { FormEvent, ReactNode } from "react";
 
 const ClientForm = ({ children }: { children: ReactNode }) => {
   const clientSubmit = async (e: FormEvent<HTMLFormElement>) => {

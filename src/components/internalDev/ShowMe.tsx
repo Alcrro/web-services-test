@@ -1,6 +1,6 @@
 "use client";
 import Button from "@/shared/ui/Button";
-import React, { ReactNode, useRef, useState } from "react";
+import { ReactNode, useRef, useState } from "react";
 
 const ShowMe = ({ children }: { children: ReactNode }) => {
   const [highlight, setHighlight] = useState(false);

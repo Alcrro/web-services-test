@@ -1,4 +1,3 @@
-import React from "react";
 import style from "@/components/styles/servicesList.module.scss";
 import { IServiceFeature } from "@/modules/services/domain/types/service.types";
 import Title from "@/shared/ui/Title";

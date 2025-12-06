@@ -1,4 +1,3 @@
-import React from "react";
 import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
 import { IServiceOrderTableProps } from "../../modules/orders/components/OrdersTable";
 import { IFiltersServiceOrders } from "@/modules/orders/domain/types/order.types";

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { FC, HTMLAttributes } from "react";
+import { FC, HTMLAttributes } from "react";
 import { IconType } from "react-icons/lib";
 import style from "@/components/styles/footerIconLink.module.scss";
 

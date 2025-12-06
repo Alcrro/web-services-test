@@ -1,5 +1,4 @@
 import InvoiceTableHeader from "@/components/atoms/invoice/InvoiceTableHeader";
-import React from "react";
 
 const InvoiceTableHeaderContainer = () => {
   const tableHeaderArray = [

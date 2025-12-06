@@ -1,5 +1,3 @@
-import React from "react";
-
 const InvoiceTableBodyContainer = () => {
   return <div>InvoiceTableBodyContainer</div>;
 };

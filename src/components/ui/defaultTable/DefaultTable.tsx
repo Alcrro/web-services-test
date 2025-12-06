@@ -5,14 +5,14 @@ import {
   getCoreRowModel,
   flexRender,
 } from "@tanstack/react-table";
-import React from "react";
+
 import { cn } from "@/lib/utils";
 import { IMetaPagination } from "@/modules/globals/types/types";
 import PaginationV2 from "./pagination/PavinationV2";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
 import { usePaginationStore } from "@/store/usePaginationStore";
-
+import React from "react";
 export type TableProps<T = unknown, TValue = unknown> = {
   data: T[];
   columns: ColumnDef<T, TValue>[];

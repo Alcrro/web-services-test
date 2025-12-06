@@ -2,7 +2,7 @@ import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 import { portfolioSEO } from "@/shared/data/seo/portfolioSEO";
 import { generateSEO } from "@/lib/seo";
 import { Metadata } from "next";
-import React, { Suspense } from "react";
+import { Suspense } from "react";
 import PortfolioCta from "@/components/molecules/portfolio/PortfolioCta";
 import PortfolioProjectsClient from "@/components/molecules/portfolio/PortfolioProjectsClient";
 import HeroSection from "@/components/organisms/portfolio/HeroSection";

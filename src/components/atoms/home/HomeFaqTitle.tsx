@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "@/components/styles/FAQ.module.scss";
 import Title from "@/shared/ui/Title";
 const HomeFaqTitle = () => {

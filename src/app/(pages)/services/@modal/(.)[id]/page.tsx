@@ -1,4 +1,3 @@
-import React from "react";
 import ServiceCard from "@/components/molecules/service/card/ServiceCard";
 import ServicesList from "@/components/molecules/service/card/ServicesList";
 import ServiceModal from "@/components/molecules/service/servicesConifigurator/ServiceModal";

@@ -1,5 +1,4 @@
 import Image from "next/image";
-import React from "react";
 import { ITestimonialReview } from "@/shared/data/consts/homePage/homePageContent";
 
 const TestimonialCard = ({ review }: { review: ITestimonialReview }) => {

@@ -1,5 +1,5 @@
 import { getServiceOrder } from "@/services/api/services/servicesApi";
-import React, { FC } from "react";
+import { FC } from "react";
 import DefaultTableClient from "../../../components/organisms/OrdersTableClient";
 import { ordersTableMapper } from "@/modules/orders/infrastructure/serviceOrderMapper";
 import {

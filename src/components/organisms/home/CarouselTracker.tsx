@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import React, {
+import {
   ElementType,
   forwardRef,
   ComponentPropsWithoutRef,

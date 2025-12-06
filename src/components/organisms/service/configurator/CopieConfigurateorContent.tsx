@@ -1,5 +1,4 @@
 import { useServiceConfiguratorStore } from "@/context/useServiceConfiguratorStore";
-import React from "react";
 
 const CopieConfiguratorContent = () => {
   const quantity = useServiceConfiguratorStore((store) => store.quantity);

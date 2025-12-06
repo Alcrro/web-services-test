@@ -3,7 +3,6 @@ export const dynamic = "force-dynamic";
 import ServiceCard from "@/components/molecules/service/card/ServiceCard";
 import ServicesList from "@/components/molecules/service/card/ServicesList";
 import { getFutureServiceById } from "@/services/api/services/servicesApi";
-import React from "react";
 
 // app/services/[slug]/page.tsx
 import { Metadata } from "next";

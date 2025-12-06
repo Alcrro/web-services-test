@@ -1,7 +1,7 @@
 import { IServiceFeature } from "@/modules/services/domain/types/service.types";
 import { servicesV11 } from "@/shared/data/consts/cardServices/cardServicesData";
 import { modifyIdForIcon } from "@/shared/utils/modifyIdForIcons";
-import React, { FC } from "react";
+import { FC } from "react";
 import ServiceFeatureListItem from "./ServiceFeatureListItem";
 import ServicesListIconMapper from "../../../../shared/data/mappers/ServicesListIconMapper";
 

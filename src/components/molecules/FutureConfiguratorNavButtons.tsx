@@ -8,7 +8,7 @@ import {
   ArrowRightCircle,
   CheckCircle,
 } from "lucide-react";
-import React, { useCallback, useEffect, useMemo } from "react";
+import { useCallback, useEffect, useMemo } from "react";
 import { IPriceCalculated } from "./ConfigureReviewList";
 import { sendConfigurator } from "@/lib/services/makeAnOrder";
 import { IClient } from "@/modules/clients/domain/types/client.types";

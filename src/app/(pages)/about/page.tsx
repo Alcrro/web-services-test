@@ -1,5 +1,5 @@
 import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
-import React from "react";
+
 import styles from "@/components/styles/aboutMe.module.scss";
 import Image from "next/image";
 import { Metadata } from "next";

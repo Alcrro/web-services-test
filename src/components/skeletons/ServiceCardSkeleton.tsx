@@ -1,5 +1,5 @@
 import style from "@/components/styles/servicesCards.module.scss";
-import React from "react";
+
 import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
 import { getFutureService } from "@/services/api/services/servicesApi";
 const ServiceCardSkeleton = async () => {

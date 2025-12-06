@@ -1,5 +1,5 @@
 import { IHomeTestimonial } from "@/shared/data/consts/homePage/homePageContent";
-import React from "react";
+
 import style from "@/components/styles/testimonials.module.scss";
 import TestimonialCard from "../../molecules/Cards/testimonials/TestimonialCard";
 import TestimonialCarouselV2 from "./TestimonialCarouselV2";

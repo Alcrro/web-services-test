@@ -1,6 +1,5 @@
 import Title from "@/shared/ui/Title";
 import Link from "next/link";
-import React from "react";
 
 const page = async () => {
   return (

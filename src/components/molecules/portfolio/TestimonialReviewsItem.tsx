@@ -3,7 +3,7 @@ import TestimonialsReviewImage from "@/components/atoms/portfolio/TestimonialsRe
 import TestimonialsReviewTitle from "@/components/atoms/portfolio/TestimonialsReviewTitle";
 import { ITestimonialReview } from "@/shared/data/consts/homePage/homePageContent";
 
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface ITestimonialReviewItemProps {
   review: ITestimonialReview;

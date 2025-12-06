@@ -1,6 +1,5 @@
 import Description from "@/shared/ui/Description";
 import Title from "@/shared/ui/Title";
-import React from "react";
 
 const ServiceCardHeader = ({
   name,

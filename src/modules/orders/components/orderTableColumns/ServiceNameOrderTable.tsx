@@ -10,7 +10,7 @@ import {
   PopoverTrigger,
 } from "@radix-ui/react-popover";
 import { Column } from "@tanstack/react-table";
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 import HeaderColumnListItem from "@/components/atoms/HeaderColumnListItem";
 import TableHeaderNotification from "@/components/atoms/notifications/TableHeaderNotification";

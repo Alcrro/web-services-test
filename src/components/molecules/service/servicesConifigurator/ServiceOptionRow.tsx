@@ -1,7 +1,7 @@
 "use client";
 import { IServiceFeature } from "@/modules/services/domain/types/service.types";
 import { formatPriceValue } from "@/shared/utils/formatServicesPrice";
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface IServiceConfigOptionRow {
   option: IServiceFeature;

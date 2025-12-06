@@ -1,6 +1,6 @@
 // modules/home/components/organisms/TestimonialCarousel.tsx
 "use client";
-import React, { ReactNode, useRef } from "react";
+import { ReactNode, useRef } from "react";
 import { FaArrowAltCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import style from "@/components/styles/testimonialCarousel.module.scss";
 import NavigationButton from "@/components/atoms/buttons/NavigationButton";

@@ -1,6 +1,6 @@
 "use client";
 import { useModalStore } from "@/context/modalStore";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 const IconSearchNavbar = ({ children }: { children: ReactNode }) => {
   const open = useModalStore((store) => store.open);

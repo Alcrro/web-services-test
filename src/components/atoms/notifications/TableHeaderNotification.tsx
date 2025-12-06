@@ -1,5 +1,4 @@
 import { CircleIcon } from "lucide-react";
-import React from "react";
 
 const TableHeaderNotification = () => {
   return (

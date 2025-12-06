@@ -1,5 +1,5 @@
 "use client";
-import React, { ReactNode } from "react";
+import { ReactNode } from "react";
 
 const ServicesListModal = ({ children }: { children: ReactNode }) => {
   return (

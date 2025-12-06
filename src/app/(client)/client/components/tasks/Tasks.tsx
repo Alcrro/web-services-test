@@ -1,4 +1,3 @@
-import React from "react";
 import TasksList from "./TasksList";
 import { getSession } from "@/shared/utils/getSession";
 import { TaskApi } from "@/modules/tasks/infrastructure/taskApi.repository";

@@ -1,5 +1,3 @@
-import React from "react";
-
 const ContactFormTitle = () => {
   return (
     <h2 id="contact-form" className="text-2xl text-center pb-2">

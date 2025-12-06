@@ -1,5 +1,5 @@
 import { footerData } from "@/shared/data/consts/footer/footerData";
-import React from "react";
+
 import FooterColumn from "../molecules/footer/FooterColumn";
 import style from "@/components/styles/footer.module.scss";
 const Footer = () => {

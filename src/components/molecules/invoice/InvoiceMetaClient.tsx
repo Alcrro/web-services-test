@@ -1,6 +1,6 @@
 import InvoiceMetaDescription from "@/components/atoms/invoice/InvoiceMetaDescription";
 import { IClient } from "@/modules/clients/domain/types/client.types";
-import React, { FC } from "react";
+import { FC } from "react";
 
 const InvoiceMetaClient: FC<IClient> = ({ name, email, phone }) => {
   return (

@@ -1,7 +1,7 @@
 import { ServiceBenefitItem } from "@/shared/data/consts/servicePage/servicePageContent";
 import Description from "@/shared/ui/Description";
 import Title from "@/shared/ui/Title";
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface ISerBenefProp {
   item: ServiceBenefitItem;

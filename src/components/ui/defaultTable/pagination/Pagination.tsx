@@ -4,7 +4,7 @@ import { IMetaPagination } from "@/modules/globals/types/types";
 import { ArrowLeftCircle, ArrowRightCircle } from "lucide-react";
 import { usePathname, useSearchParams } from "next/navigation";
 import { useRouter } from "next/navigation";
-import React, { FC } from "react";
+import { FC } from "react";
 
 interface IMetaPaginationProps {
   meta: IMetaPagination;

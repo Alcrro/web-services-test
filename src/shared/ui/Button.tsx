@@ -1,5 +1,5 @@
 "use client";
-import React, { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react";
+import { AnchorHTMLAttributes, ButtonHTMLAttributes } from "react";
 import Link, { LinkProps } from "next/link";
 
 type ButtonVariant = "primary" | "secondary" | "outline" | "disabled";

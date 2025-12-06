@@ -1,6 +1,6 @@
 import { ServiceFaqSection } from "@/shared/data/consts/servicePage/servicePageContent";
 import Title from "@/shared/ui/Title";
-import React from "react";
+
 import ServiceFaqListItem from "./ServiceFaqListItem";
 
 const ServiceFaq = ({ faq }: { faq: ServiceFaqSection }) => {
