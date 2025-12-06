@@ -1,5 +1,5 @@
 import React, { ReactNode } from "react";
-import style from "./defaultLayout.module.scss";
+import style from "../../styles/defaultLayout.module.scss";
 import Footer from "@/components/organisms/Footer";
 import PublicHeader from "@/components/organisms/PublicHeader";
 
