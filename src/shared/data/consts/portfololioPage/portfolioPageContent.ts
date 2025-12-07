@@ -20,7 +20,7 @@ export const portfolioPageContent: PortfolioPageContent = {
       description:
         "Custom online store with payment integration and admin panel.",
       category: "web",
-      image: "/images/portfolio/e-commerce.jpeg",
+      image: "/images/portfolio/e-commerce.webP",
       link: "#",
       tags: [
         { type: "frontend", value: "NextJS" },
@@ -37,7 +37,7 @@ export const portfolioPageContent: PortfolioPageContent = {
       title: "CRM Application",
       description: "Customer management platform with reporting and analytics.",
       category: "app",
-      image: "/images/portfolio/crm.png",
+      image: "/images/portfolio/crm.webP",
       link: "#",
       tags: [
         {
@@ -54,7 +54,7 @@ export const portfolioPageContent: PortfolioPageContent = {
       title: "Automation Script",
       description: "Custom script to automate repetitive business tasks.",
       category: "scripts",
-      image: "/images/portfolio/script.jpg",
+      image: "/images/portfolio/script.webP",
       link: "#",
       tags: [
         { type: "backend", value: "ExpressJS" },
