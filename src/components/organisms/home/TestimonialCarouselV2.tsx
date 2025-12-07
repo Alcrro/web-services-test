@@ -8,16 +8,29 @@ const TestimonialCarouselV2 = ({ children }: { children: ReactNode[] }) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const [canPrev, setCanPrev] = useState(false);
   const [canNext, setCanNext] = useState(true);
+  const [cardWidth, setCardWidth] = useState(0);
 
-  const scrollAmount = () => {
+  useLayoutEffect(() => {
     const track = trackRef.current;
-    if (!track) return 0;
+    if (!track) return;
 
-    const card = track.querySelector(`.${styles.card}`) as HTMLElement;
-    if (!card) return 0;
+    const card = track.querySelector(`.${styles.card}`);
+    if (!(card instanceof HTMLElement)) return;
 
-    return card.offsetWidth + 16; // card width + gap
-  };
+    setCardWidth(card.offsetWidth + 16);
+    const resizeObserver = new ResizeObserver((entries) => {
+      for (let entry of entries) {
+        if (entry.target instanceof HTMLElement) {
+          setCardWidth(entry.target.offsetWidth + 16);
+        }
+      }
+    });
+    if (card) resizeObserver.observe(card);
+
+    return () => resizeObserver.disconnect();
+  }, []);
+
+  const scrollAmount = () => cardWidth;
 
   const updateButtons = () => {
     const track = trackRef.current;

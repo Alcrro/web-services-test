@@ -64,5 +64,10 @@
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.9.3",
     "vitest": "^4.0.9"
-  }
+  },
+  "browserList": [
+    "defaults and supports es6-module",
+    "not IE 11",
+    "not op_mini all"
+  ]
 }
