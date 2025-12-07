@@ -10,6 +10,7 @@ interface DefaultIconProps {
   height?: number;
   priority?: boolean;
   fetchPriority?: "high" | "low" | "auto";
+  sizes?: string;
 }
 
 const DefaultIcon = ({
@@ -17,6 +18,7 @@ const DefaultIcon = ({
   icon,
   alt,
   className,
+  sizes,
   ...imageProps
 }: DefaultIconProps) => {
   if (src || typeof icon === "string") {
@@ -27,6 +29,7 @@ const DefaultIcon = ({
         width={imageProps.width || 1000}
         height={imageProps.height || 1000}
         className={className}
+        sizes={sizes}
         {...imageProps} // priority, fetchPriority etc.
       />
     );
