@@ -1,12 +1,15 @@
-import Image, { ImageProps } from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { ReactNode } from "react";
 
 interface DefaultIconProps {
-  src?: string;
+  src?: string | StaticImageData; // optional dacă vrei să poți avea și icon ReactNode
   icon?: string | ReactNode;
   alt: string;
-  className?: string; // ✅ adăugat
-  imageProps?: ImageProps; // optional, dacă vrei să trimiți props suplimentare la Image
+  className?: string;
+  width?: number;
+  height?: number;
+  priority?: boolean;
+  fetchPriority?: "high" | "low" | "auto";
 }
 
 const DefaultIcon = ({
@@ -21,11 +24,10 @@ const DefaultIcon = ({
       <Image
         src={src || (icon as string)}
         alt={alt}
-        width={1000}
-        height={1000}
+        width={imageProps.width || 1000}
+        height={imageProps.height || 1000}
         className={className}
-        priority
-        {...imageProps}
+        {...imageProps} // priority, fetchPriority etc.
       />
     );
   }
