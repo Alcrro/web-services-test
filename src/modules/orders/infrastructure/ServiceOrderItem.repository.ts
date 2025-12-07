@@ -95,7 +95,10 @@ export class ServiceOrderItemImpl implements ServiceOrderItemRepository {
       return result.map(serviceOrderItemMapperDocToDom);
     } catch (error) {
       console.log(error);
-      throw new Error("Method not implemented.");
+      if (error instanceof Error) {
+        throw new Error(error.message);
+      }
+      throw new Error("Internal db error.");
     }
   }
   async update(

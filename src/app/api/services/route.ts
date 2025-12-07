@@ -14,11 +14,20 @@ export async function GET(request: NextRequest) {
     const filter = request.nextUrl.searchParams.get("filter");
     const value = request.nextUrl.searchParams.get("value");
 
-    const options = {
+    const orderByObj = field
+      ? { [field]: direction === "desc" ? "desc" : "asc" }
+      : undefined;
+
+    // filtersPrisma trebuie să fie un obiect cu chei reale din model Service
+    const filtersObj: Record<string, any> = {};
+    if (filter && value) {
+      filtersObj[filter] = value;
+    }
+    const options: IFilterServices = {
       limit: Number(limit),
       page,
-      orderBy: { field, direction },
-      filters: { filter, value },
+      orderBy: orderByObj,
+      filters: filtersObj,
     } as unknown as IFilterServices;
 
     const repositoryImpl = new ServiceRepositImpl(prisma);
