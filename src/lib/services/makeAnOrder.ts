@@ -3,6 +3,7 @@ import { clientDetailsVerification } from "@/modules/orders/application/validato
 import { IServiceOrder } from "@/modules/orders/domain/types/order.types";
 import { IServiceFeature } from "@/modules/services/domain/types/service.types";
 
+const API = process.env.NEXT_PUBLIC_API;
 export async function sendConfigurator(
   payload: Partial<IServiceOrder>,
   setStep: (step: number) => void,
@@ -23,7 +24,7 @@ export async function sendConfigurator(
         errors: validation.errors,
       };
     }
-    const res = await fetch("http://localhost:3000/api/services/orders", {
+    const res = await fetch(`${API}/api/services/orders`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),

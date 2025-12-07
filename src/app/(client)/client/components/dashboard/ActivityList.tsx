@@ -3,15 +3,15 @@
 
 import Activity from "./Activity";
 import { useQuery } from "@tanstack/react-query";
-
+const API = process.env.NEXT_PUBLIC_API;
 const ActivityList = () => {
   const { data, isLoading, isError } = useQuery({
     queryKey: ["linkedOrder"],
     queryFn: async () => {
-      const result = await fetch(
-        "http://localhost:3000/api/activity/check-order-linked",
-        { method: "GET", credentials: "include" }
-      );
+      const result = await fetch(`${API}/api/activity/check-order-linked`, {
+        method: "GET",
+        credentials: "include",
+      });
 
       if (!result.ok) throw new Error("Failed to fetch linked order info");
       return result.json(); // { linked: boolean }

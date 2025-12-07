@@ -1,14 +1,15 @@
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-toastify";
 
+const API = process.env.NEXT_PUBLIC_API;
 export function useGetCheckOrderLinked() {
   return useQuery({
     queryKey: ["orderLinked"],
     queryFn: async () => {
-      const result = await fetch(
-        "http://localhost:3000/api/activity/check-order-linked",
-        { method: "GET", credentials: "include" }
-      );
+      const result = await fetch(`${API}/api/activity/check-order-linked`, {
+        method: "GET",
+        credentials: "include",
+      });
 
       if (!result.ok) throw new Error("Failed to fetch linked order info");
       return result.json(); // { linked: boolean }
@@ -21,7 +22,7 @@ export interface OrderLinked {
   linked: boolean; // true if the guest orders are linked, false otherwise
 }
 async function patchOrderLinked(value: "later" | "yes") {
-  const res = await fetch("http://localhost:3000/api/activity/orders-linked", {
+  const res = await fetch(`${API}/api/activity/orders-linked`, {
     method: "PATCH",
     credentials: "include",
     headers: {

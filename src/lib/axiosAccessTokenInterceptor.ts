@@ -2,15 +2,16 @@ import { getSession } from "@/shared/utils/getSession";
 import { JWTTokenServices } from "@/services/token/JWTToken";
 import axios from "axios";
 
+const API = process.env.NEXT_PUBLIC_API;
 // Create a server-side axios instance
 const api = axios.create({
-  baseURL: "http://localhost:3000/api",
+  baseURL: `${API}/api`,
 });
 
 // Helper to refresh access token
 const refreshAccessToken = async () => {
   const res = await axios.post(
-    "http://localhost:3000/api/auth/refresh",
+    `${API}/api/auth/refresh`,
     {},
     {
       headers: { "Content-Type": "application/json" },
