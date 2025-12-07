@@ -1,4 +1,6 @@
-export const dynamic = "force-dynamic";
+// -------------------- ISR: revalidate --------------------
+export const revalidate = 60; // Regenerare la 60 secunde
+
 import ServiceCta from "@/components/molecules/service/ServiceCta";
 import ServiceFaq from "@/components/molecules/service/ServiceFaq";
 import ServiceHero from "@/components/molecules/service/ServiceHero";
@@ -8,7 +10,6 @@ import { servicesPageContent } from "@/shared/data/consts/servicePage/servicePag
 import Services from "@/modules/services/components/Services";
 import Loading from "./loading";
 import { Suspense } from "react";
-import Boundary from "@/components/internalDev/Boundary";
 
 export default function ServicesPage() {
   const { hero, faq, benefits, process, cta } = servicesPageContent;
@@ -25,11 +26,9 @@ export default function ServicesPage() {
 
       {/* Services Cards */}
 
-      <Boundary hydration="server">
-        <Suspense fallback={<Loading />}>
-          <Services />
-        </Suspense>
-      </Boundary>
+      <Suspense fallback={<Loading />}>
+        <Services />
+      </Suspense>
 
       {/* Benefits */}
       <section

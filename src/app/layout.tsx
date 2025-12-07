@@ -3,7 +3,6 @@ import "./globals.css";
 import ThemeProvider from "@/context/ThemeProvider";
 import ReactQueryProvider from "../shared/hooks/ReactQueryProvider";
 import { ToastContainer } from "react-toastify";
-import BoundaryProvider from "@/components/internalDev/BoundaryProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,11 +26,10 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <BoundaryProvider>
-          <ThemeProvider>
-            <ReactQueryProvider>{children}</ReactQueryProvider>
-          </ThemeProvider>
-        </BoundaryProvider>
+        <ThemeProvider>
+          <ReactQueryProvider>{children}</ReactQueryProvider>
+        </ThemeProvider>
+
         <ToastContainer />
       </body>
     </html>
