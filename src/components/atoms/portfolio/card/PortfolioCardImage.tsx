@@ -9,7 +9,11 @@ const PortfolioCardImage = ({ image, alt }: { image: string; alt: string }) => {
       <DefaultIcon
         src={image}
         alt={alt}
+        width={422}
+        height={316}
         className="group-hover:scale-105 transition-transform duration-300 w-full h-full object-cover"
+        priority
+        fetchPriority="high"
       />
     </div>
   );

@@ -24,8 +24,8 @@ export const useSkeletonFallback = <T,>({
               services.toLowerCase()
           );
     const timer = setTimeout(() => {
-      setLoading(false);
       setVisibleProjects(filtered);
+      setLoading(false);
     }, 1600);
     return () => clearTimeout(timer);
   }, [filterKey, data, services, setLoading, setVisibleProjects]);

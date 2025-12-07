@@ -36,9 +36,7 @@ const Portfolio = () => {
         </section>
         {/* Filters && Projects Grid */}
         <section>
-          <Suspense fallback={"fallback"}>
-            <PortfolioProjectsClient projects={projects} filters={filters} />
-          </Suspense>
+          <PortfolioProjectsClient projects={projects} filters={filters} />
         </section>
         {/* Testimonials */}
         {testimonials && (

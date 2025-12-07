@@ -21,7 +21,7 @@ export default function PortfolioProjectsClient({
   const [visibleProjects, setVisibleProjects] =
     useState<PortfolioProject[]>(projects);
   const router = useRouter();
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   const searchParams = useSearchParams();
   const services = searchParams.get("services");
 
