@@ -1,6 +1,11 @@
 import style from "@/components/styles/footerTitle.module.scss";
+import Title from "@/shared/ui/Title";
 const FooterTitle = ({ title }: { title: string }) => {
-  return <li className={`${style.li}`}>{title}</li>;
+  return (
+    <Title as={"h4"} className={`${style.li}`}>
+      {title}
+    </Title>
+  );
 };
 
 export default FooterTitle;

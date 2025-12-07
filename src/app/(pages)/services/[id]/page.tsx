@@ -1,4 +1,5 @@
-export const dynamic = "force-dynamic";
+// -------------------- ISR: revalidate --------------------
+export const revalidate = 60; // Regenerare la 60 secunde
 
 import ServiceCard from "@/components/molecules/service/card/ServiceCard";
 import ServicesList from "@/components/molecules/service/card/ServicesList";

@@ -1,6 +1,3 @@
-export const dynamic = "force-dynamic";
-export const dynamicParams = true;
-
 import ConfiguratorModal from "./ConfiguratorModal";
 import { getFutureServiceById } from "@/services/api/services/servicesApi";
 import SeniorWebServiceConfigurator from "@/components/organisms/service/configurator/ServieceConfigurator";

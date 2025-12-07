@@ -23,8 +23,9 @@ const FooterIconLink: FC<FooterIconLinkProps> = ({
       data-disabled={disabled}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={`Open ${name}`}
     >
-      <Icon />
+      <Icon aria-hidden="true" />
     </Link>
   );
 };

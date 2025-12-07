@@ -1,4 +1,3 @@
-
 import Configurator from "./Configurator";
 import { getDynamicComponent } from "@/shared/utils/getDynamicComponent";
 import ClientDetails from "./ClientDetails";
@@ -27,7 +26,7 @@ const ServiceConfigurator = ({
     params
   );
 
-  if (!DynamicComponent) return <div>test</div>;
+  if (!DynamicComponent) return <div>this url doesnt have component</div>;
   // Pass services ONLY to Configurator (features step)
   const stepProps = params[0] === "features" ? { services } : {};
 
