@@ -7,11 +7,11 @@ const Footer = () => {
 
   return (
     <footer className={`${style.footer}`}>
-      <ul className={`${style.ul}`}>
+      <div className={`${style.ul}`}>
         {footerData.map((item) => (
           <FooterColumn key={item.id} item={item} />
         ))}
-      </ul>
+      </div>
 
       <div className={`${style.footer_reserved}`}>
         © {year}

@@ -54,7 +54,7 @@ const TestimonialCarouselV2 = ({ children }: { children: ReactNode[] }) => {
   return (
     <div className={styles.wrapper}>
       <NavigationButton
-        className={`${styles.carousel_btn} ${
+        className={`${
           styles.left
         } absolute top-1/2 -translate-y-1/2 rounded-full ${
           !canPrev
@@ -63,8 +63,9 @@ const TestimonialCarouselV2 = ({ children }: { children: ReactNode[] }) => {
         }`}
         isDisabled={!canPrev}
         handleMove={handlePrev}
+        aria-label="Previous testimonial"
       >
-        <FaArrowAltCircleLeft className="text-2xl" />
+        <FaArrowAltCircleLeft className="text-2xl" aria-hidden="true" />
       </NavigationButton>
       <div className={styles.track} ref={trackRef}>
         {children.map((child, index) => (
@@ -73,7 +74,7 @@ const TestimonialCarouselV2 = ({ children }: { children: ReactNode[] }) => {
           </div>
         ))}
         <NavigationButton
-          className={`${styles.carousel_btn} ${
+          className={`${
             styles.right
           } absolute right-0 top-1/2 -translate-y-1/2 rounded-full ${
             !canNext
@@ -82,8 +83,9 @@ const TestimonialCarouselV2 = ({ children }: { children: ReactNode[] }) => {
           }`}
           isDisabled={!canNext}
           handleMove={handleNext}
+          aria-label="Next testimonial"
         >
-          <FaArrowCircleRight className="text-2xl" />
+          <FaArrowCircleRight className="text-2xl" aria-hidden="true" />
         </NavigationButton>
       </div>
     </div>
