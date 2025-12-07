@@ -4,13 +4,16 @@ import { ITestimonialReview } from "@/shared/data/consts/homePage/homePageConten
 const TestimonialCard = ({ review }: { review: ITestimonialReview }) => {
   return (
     <>
-      <Image
-        src={review.image}
-        alt={review.name}
-        width={1000}
-        height={1000}
-        className="w-35 h-35 rounded-full bg-gray-300 mx-auto"
-      />
+      <div className="w-35 h-35 rounded-full overflow-hidden mx-auto">
+        <Image
+          src={review.image}
+          alt={review.name}
+          width={140}
+          height={140}
+          className="object-cover w-full h-full bg-gray-300"
+          priority
+        />
+      </div>
       <div>{review.name}</div>
       <div>{review.role}</div>
       <div className="text-center text-gray-500 text-sm">{review.text}</div>

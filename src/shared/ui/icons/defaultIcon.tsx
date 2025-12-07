@@ -24,6 +24,7 @@ const DefaultIcon = ({
         width={1000}
         height={1000}
         className={className}
+        priority
         {...imageProps}
       />
     );

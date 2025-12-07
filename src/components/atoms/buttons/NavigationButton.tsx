@@ -15,12 +15,14 @@ const NavigationButton: FC<INavigationBtnProps> = ({
   handleMove,
   children,
   className,
+  ...props
 }) => {
   return (
     <Button
       className={`${variant && cn(variant)} ${cn(className)} }`}
       disabled={isDisabled}
       onClick={handleMove}
+      {...props}
     >
       {children}
     </Button>
