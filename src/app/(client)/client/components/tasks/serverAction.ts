@@ -1,5 +1,6 @@
 "use server";
 
+import { API_URL } from "@/shared/utils/config";
 import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 
@@ -9,7 +10,7 @@ export async function setLinkedOrderWithAccount(formData: FormData) {
   const value = formData.get("value") as string;
 
   try {
-    await fetch(`http://localhost:3000/api/activity/orders-linked`, {
+    await fetch(`${API_URL}/api/activity/orders-linked`, {
       method: "PATCH",
       headers: {
         "Content-Type": "application/json",

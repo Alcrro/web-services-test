@@ -11,6 +11,7 @@ import { servicesSEO } from "@/shared/data/seo/serviceSEO";
 import { generateSEO } from "@/lib/seo";
 import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
 import { IService } from "@/modules/services/domain/types/service.types";
+import { METADATA_BASE, SITE_URL } from "@/shared/utils/config";
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -30,10 +31,10 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...generateSEO({
       title: seo.title,
       description: seo.description,
-      url: `https://alcrro.ro/services/${slug}`,
+      url: `${SITE_URL}/services/${slug}`,
       image: seo.image,
     }),
-    metadataBase: new URL("https://alcrro.ro"),
+    metadataBase: METADATA_BASE,
     other: {
       keywords: seo.keywords.join(", "),
     },

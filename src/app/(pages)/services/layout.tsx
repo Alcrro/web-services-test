@@ -3,16 +3,17 @@ import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 import { Metadata } from "next";
 import { generateSEO } from "@/lib/seo";
 import { homePageSEO } from "@/shared/data/seo/homeSEO";
+import { METADATA_BASE, SITE_URL } from "@/shared/utils/config";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     ...generateSEO({
       title: homePageSEO.title,
       description: homePageSEO.description,
-      url: "https://alcrro.ro",
+      url: SITE_URL,
       image: homePageSEO.openGraph.images[0].url,
     }),
-    metadataBase: new URL("https://alcrro.ro"),
+    metadataBase: METADATA_BASE,
     other: {
       keywords: homePageSEO.keywords.join(", "),
     },

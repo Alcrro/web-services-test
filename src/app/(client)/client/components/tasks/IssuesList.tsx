@@ -1,8 +1,9 @@
 "use client";
+import { API_URL } from "@/shared/utils/config";
 import { useQuery } from "@tanstack/react-query";
-const API = process.env.NEXT_PUBLIC_API;
+
 async function fetchIssues() {
-  const response = await fetch(`${API}/api/github/tasks`, {
+  const response = await fetch(`${API_URL}/api/github/tasks`, {
     method: "GET",
   });
   const data = await response.json();

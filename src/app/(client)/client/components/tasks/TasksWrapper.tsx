@@ -1,4 +1,5 @@
 "use client";
+import { API_URL } from "@/shared/utils/config";
 import { ReactNode, useEffect } from "react";
 
 const TasksWrapper = ({
@@ -11,7 +12,7 @@ const TasksWrapper = ({
   useEffect(() => {
     if (!needsRefresh) return;
     async function getRefreshToken() {
-      await fetch(`http://localhost:3000/api/auth/refresh`, {
+      await fetch(`${API_URL}/api/auth/refresh`, {
         method: "POST",
         credentials: "include",
       }).then((res) => res.json());

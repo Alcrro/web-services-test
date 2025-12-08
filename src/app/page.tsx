@@ -6,8 +6,10 @@ import Testimonials from "@/components/organisms/home/HomeTestimonials";
 import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 import { homePageContent } from "@/shared/data/consts/homePage/homePageContent";
 import { Metadata } from "next";
+import { METADATA_BASE } from "@/shared/utils/config";
 
 export const metadata: Metadata = {
+  metadataBase: METADATA_BASE,
   title:
     "Custom Web Development & Digital Solutions | Profesional Web Services",
   description:
@@ -29,7 +31,7 @@ export const metadata: Metadata = {
       "Custom Web Development & Digital Solutions | Profesional Web Services",
     description:
       "High-performance websites, custom applications, and full-stack digital solutions designed for growth.",
-    url: "https://yourdomain.com",
+    url: METADATA_BASE,
     type: "website",
     siteName: "Profesional Web Services",
   },
@@ -40,7 +42,7 @@ export const metadata: Metadata = {
       "We create scalable websites, apps, and digital products that drive business growth.",
   },
   alternates: {
-    canonical: "https://yourdomain.com",
+    canonical: METADATA_BASE,
   },
   robots: {
     index: true,

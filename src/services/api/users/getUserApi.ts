@@ -1,10 +1,11 @@
+import { API_URL } from "@/shared/utils/config";
 import { getSession } from "@/shared/utils/getSession";
 
 export async function getUserApi(): Promise<{ name: string; email: string }> {
   try {
     const token = await getSession();
 
-    const result = await fetch(`http://localhost:3000/api/users`, {
+    const result = await fetch(`${API_URL}/api/users`, {
       method: "GET",
       headers: {
         "Content-type": "application/json",

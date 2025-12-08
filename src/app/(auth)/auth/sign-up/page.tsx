@@ -2,8 +2,8 @@
 import Button from "@/shared/ui/Button";
 import { FormEvent } from "react";
 import Title from "../login/components/Title";
+import { API_URL } from "@/shared/utils/config";
 
-const API = process.env.NEXT_PUBLIC_API!;
 const page = () => {
   const actionSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -13,7 +13,7 @@ const page = () => {
     const email = form.get("email");
     const password = form.get("password");
 
-    await fetch(`${API}/api/auth/sign-up`, {
+    await fetch(`${API_URL}/api/auth/sign-up`, {
       method: "POST",
       headers: { "Contend-Type": "application/json" },
       body: JSON.stringify({ name, email, password }),

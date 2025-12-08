@@ -1,10 +1,11 @@
 "use client";
+import { API_URL } from "@/shared/utils/config";
 import { useEffect } from "react";
 
 const DownloadFile = (id: string) => {
   useEffect(() => {
     async function fetchBob() {
-      const result = await fetch(`/api/invoices/${id}`);
+      const result = await fetch(`${API_URL}/api/invoices/${id}`);
 
       if (!result.ok) return;
 

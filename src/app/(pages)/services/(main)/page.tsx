@@ -1,6 +1,6 @@
 // -------------------- ISR: revalidate --------------------
-export const revalidate = 60; // Regenerare la 60 secunde
-
+// export const revalidate = 60; // Regenerare la 60 secunde
+export const dynamic = "force-dynamic";
 import ServiceCta from "@/components/molecules/service/ServiceCta";
 import ServiceFaq from "@/components/molecules/service/ServiceFaq";
 import ServiceHero from "@/components/molecules/service/ServiceHero";

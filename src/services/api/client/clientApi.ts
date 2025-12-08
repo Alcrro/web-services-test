@@ -3,14 +3,13 @@ import {
   ICLientFIlters,
 } from "@/modules/clients/domain/types/client.types";
 import { IMetaPagination } from "@/modules/globals/types/types";
-
-const NEXT_PUBLIC_API = process.env.NEXT_PUBLIC_API!;
+import { API_URL } from "@/shared/utils/config";
 
 export async function getClientsAPI(
   options?: ICLientFIlters
 ): Promise<{ data: IClient[]; meta: IMetaPagination }> {
   try {
-    const url = new URL(`${NEXT_PUBLIC_API}/api/clients`);
+    const url = new URL(`${API_URL}/api/clients`);
     if (options) {
       if (options.page) url.searchParams.append("page", String(options.page));
       if (options.limit)
@@ -41,7 +40,7 @@ export async function getClientsAPI(
 
 export async function addClientApi(data: Partial<IClient>) {
   try {
-    const result = await fetch(`${NEXT_PUBLIC_API}/api/clients`, {
+    const result = await fetch(`${API_URL}/api/clients`, {
       method: "POST",
 
       body: JSON.stringify(data), // trimitem direct obiectul

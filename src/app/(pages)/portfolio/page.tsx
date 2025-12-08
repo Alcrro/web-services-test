@@ -8,16 +8,17 @@ import PortfolioProjectsClient from "@/components/molecules/portfolio/PortfolioP
 import HeroSection from "@/components/organisms/portfolio/HeroSection";
 import TestimonialsSection from "@/components/organisms/portfolio/TestimonialsSection";
 import { portfolioPageContent } from "@/shared/data/consts/portfololioPage/portfolioPageContent";
+import { METADATA_BASE, SITE_URL } from "@/shared/utils/config";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
     ...generateSEO({
       title: portfolioSEO.title,
       description: portfolioSEO.description,
-      url: `https://alcrro.ro/portfolio`,
+      url: `${SITE_URL}/portfolio`,
       image: portfolioSEO.openGraph.images[0].url,
     }),
-    metadataBase: new URL("https://alcrro.ro"),
+    metadataBase: METADATA_BASE,
     other: {
       keywords: portfolioSEO.keywords.join(", "),
     },

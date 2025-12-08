@@ -1,5 +1,6 @@
 "use client";
 
+import { API_URL } from "@/shared/utils/config";
 import { useEffect, useState } from "react";
 
 const ViewOrder = ({ id }: { id: string }) => {
@@ -12,7 +13,7 @@ const ViewOrder = ({ id }: { id: string }) => {
 
     const fetchPdf = async () => {
       try {
-        const res = await fetch(`/api/invoices/${id}`);
+        const res = await fetch(`${API_URL}/api/invoices/${id}`);
         if (!res.ok) throw new Error("Failed to fetch PDF");
         const blob = await res.blob();
         url = URL.createObjectURL(blob);

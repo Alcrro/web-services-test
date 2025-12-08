@@ -9,8 +9,7 @@ import {
   IServiceFeature,
 } from "@/modules/services/domain/types/service.types";
 import { AppError } from "@/shared/utils/AppError";
-
-const API = process.env.NEXT_PUBLIC_API;
+import { API_URL } from "@/shared/utils/config";
 
 export interface IAddServiceOrder {
   client: Partial<IClient>;
@@ -19,7 +18,7 @@ export interface IAddServiceOrder {
 }
 export async function addServiceOrder(data: IAddServiceOrder) {
   try {
-    const result = await fetch(`${API}/api/services/orders`, {
+    const result = await fetch(`${API_URL}/api/services/orders`, {
       method: "POST",
       body: JSON.stringify(data),
       headers: { "Content-Type": "application/json" }, // important!
@@ -60,7 +59,7 @@ export async function getServiceOrder(
   try {
     // console.log(options);
 
-    const url = new URL(`${API}/api/services/orders`);
+    const url = new URL(`${API_URL}/api/services/orders`);
 
     const urlConfigured = configureParams(options, url);
 
@@ -82,7 +81,7 @@ export async function getServiceOrder(
 }
 export async function getServiceOrderById<T>(id: string): Promise<T> {
   try {
-    const url = new URL(`${API}/api/services/orders/${id}`);
+    const url = new URL(`${API_URL}/api/services/orders/${id}`);
 
     const result = await fetch(`${url}`.toString(), {
       method: "GET",
@@ -105,7 +104,7 @@ export async function getFutureService(
   options: IFilterServices
 ): Promise<IService[]> {
   // Construim URL cu query dacă există slug
-  const url = new URL(`${API}/api/services`);
+  const url = new URL(`${API_URL}/api/services`);
 
   const urlConfigured = configureParams(options, url);
 
@@ -124,8 +123,7 @@ export async function getFutureService(
 }
 
 export async function getFutureServiceById(id: string): Promise<IService> {
-  const url = new URL(`${API}/api/services/${id}`);
-  console.log(url.toString());
+  const url = new URL(`${API_URL}/api/services/${id}`);
 
   try {
     const response = await fetch(`${url}`.toString(), {

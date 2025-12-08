@@ -1,14 +1,15 @@
 // ActivityList.tsx
 "use client";
 
+import { API_URL } from "@/shared/utils/config";
 import Activity from "./Activity";
 import { useQuery } from "@tanstack/react-query";
-const API = process.env.NEXT_PUBLIC_API;
+
 const ActivityList = () => {
   const { data, isLoading, isError } = useQuery({
     queryKey: ["linkedOrder"],
     queryFn: async () => {
-      const result = await fetch(`${API}/api/activity/check-order-linked`, {
+      const result = await fetch(`${API_URL}/api/activity/check-order-linked`, {
         method: "GET",
         credentials: "include",
       });

@@ -1,3 +1,5 @@
+import { API_URL } from "@/shared/utils/config";
+
 export async function getServicesPrice(): Promise<
   {
     name: string;
@@ -5,7 +7,7 @@ export async function getServicesPrice(): Promise<
   }[]
 > {
   try {
-    const result = await fetch(`http://localhost:3000/api/services/prices`, {
+    const result = await fetch(`${API_URL}/api/services/prices`, {
       method: "GET",
       headers: { "Content-type": "application/json" },
     });

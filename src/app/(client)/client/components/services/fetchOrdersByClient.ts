@@ -1,12 +1,12 @@
 "use server";
+import { API_URL } from "@/shared/utils/config";
 import { cookies } from "next/headers";
 
-const API = process.env.NEXT_PUBLIC_API;
 export async function fetchOrdersByClient() {
   try {
     const token = (await cookies()).get("accessToken")?.value ?? null;
 
-    const response = await fetch(`${API}/api/services/orders/clientId`, {
+    const response = await fetch(`${API_URL}/api/services/orders/clientId`, {
       method: "GET",
       headers: {
         "Content-Type": "application/json",

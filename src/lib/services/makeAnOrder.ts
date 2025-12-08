@@ -2,8 +2,8 @@ import { ContactInfo } from "@/context/useServiceConfiguratorStore";
 import { clientDetailsVerification } from "@/modules/orders/application/validators/validateOrder";
 import { IServiceOrder } from "@/modules/orders/domain/types/order.types";
 import { IServiceFeature } from "@/modules/services/domain/types/service.types";
+import { API_URL } from "@/shared/utils/config";
 
-const API = process.env.NEXT_PUBLIC_API;
 export async function sendConfigurator(
   payload: Partial<IServiceOrder>,
   setStep: (step: number) => void,
@@ -24,7 +24,7 @@ export async function sendConfigurator(
         errors: validation.errors,
       };
     }
-    const res = await fetch(`${API}/api/services/orders`, {
+    const res = await fetch(`${API_URL}/api/services/orders`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
