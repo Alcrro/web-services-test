@@ -1,15 +1,28 @@
 import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 
 import styles from "@/components/styles/aboutMe.module.scss";
-import Image from "next/image";
-import { Metadata } from "next";
 
-export async function getMetadata(): Promise<Metadata> {
-  return {
-    title: "About",
-    description: "Welcome to ALCRRO about",
-  };
-}
+import { Metadata } from "next";
+import DefaultIcon from "@/shared/ui/icons/defaultIcon";
+
+export const metadata: Metadata = {
+  title: "About Alexandru Roventa | Full-Stack Developer & Software Engineer",
+  description:
+    "Learn more about Alexandru Roventa, a full-stack developer with 18+ years of hands-on experience in web development, automation, and software engineering. Discover my background, expertise, and approach to building high-performance digital solutions.",
+  openGraph: {
+    title: "About Alexandru Roventa | Full-Stack Developer",
+    description:
+      "With over 18 years of experience in software engineering, I create high-quality digital products focused on performance, scalability, and clean architecture.",
+    images: [
+      {
+        url: "/images/profile.png",
+        width: 1200,
+        height: 1200,
+        alt: "Alexandru Roventa - Full-Stack Developer",
+      },
+    ],
+  },
+};
 
 const About = () => {
   return (
@@ -50,11 +63,14 @@ const About = () => {
           </div>
           <div className={styles.imageContent}>
             <div className={`${styles.imageFrame} w-20 h-20`}>
-              <Image
+              <DefaultIcon
                 src="/images/profile.png"
                 alt="Alexandru Roventa"
                 width={1000}
                 height={1000}
+                priority
+                fetchPriority="high"
+                aria-label="my profile image"
               />
             </div>
           </div>
