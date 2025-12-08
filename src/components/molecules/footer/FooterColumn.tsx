@@ -1,4 +1,4 @@
-import React, { FC } from "react";
+import { FC } from "react";
 import FooterTitle from "../../atoms/footer/FooterTitle";
 import FooterContact from "./FooterContact";
 import FooterSocials from "./FooterSocials";

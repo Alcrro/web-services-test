@@ -1,5 +1,4 @@
 import { navbarMenuData } from "@/shared/data/consts/header/menu";
-import React from "react";
 import NavbarMenuModal from "./NavbarMenuModal";
 import NavbarMenuItem from "./NavbarMenuItem";
 

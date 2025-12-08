@@ -1,7 +1,7 @@
 import { companyDetails } from "@/shared/data/consts/companyDetails/companyDetails";
 import Image from "next/image";
 import Link from "next/link";
-import React, { FC, ReactNode } from "react";
+import { FC, ReactNode } from "react";
 
 interface LogoWithImage {
   src: true;

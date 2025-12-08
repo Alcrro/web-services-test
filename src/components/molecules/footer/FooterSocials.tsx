@@ -3,7 +3,7 @@ import {
   iconsMap,
   IFooterChildren,
 } from "@/shared/data/consts/footer/footerData";
-import React, { FC } from "react";
+import { FC } from "react";
 import { IconType } from "react-icons/lib";
 
 interface IFooterChildrenProps {

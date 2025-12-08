@@ -1,0 +1,45 @@
+.nav {
+  background-color: var(--color-bg-section);
+  color: var(--color-text-secondary);
+  position: relative;
+  // overflow: hidden;
+  transition: border-radius 0.7s ease; // smooth animation
+  /* when checkbox is checked, open menu */
+
+  @media (min-width: 88rem) {
+    margin-block: 1rem;
+    border-radius: 12px;
+  }
+
+  &.isOpen {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  /* hidden checkbox */
+  .toggle-button {
+    display: none;
+  }
+
+  /* button styling */
+  .toggle-label {
+    display: none;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    text-align: center;
+  }
+
+  @media (max-width: 720px) {
+    .toggle-label {
+      display: block;
+    }
+  }
+  &:has(.toggle-button:checked) .toggle-label {
+    background-color: var(--color-bg);
+  }
+
+  &:has(.toggle-button:checked) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}
