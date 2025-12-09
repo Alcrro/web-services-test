@@ -7,9 +7,7 @@ import ServiceHero from "@/components/molecules/service/ServiceHero";
 import ServiceProcess from "@/components/molecules/service/ServiceProcess";
 import ServicesBenefits from "@/components/molecules/service/card/ServicesBenefits";
 import { servicesPageContent } from "@/shared/data/consts/servicePage/servicePageContent";
-import Services from "@/modules/services/components/Services";
-import Loading from "./loading";
-import { Suspense } from "react";
+import ServicesList from "@/components/organisms/ServicesList";
 
 export default function ServicesPage() {
   const { hero, faq, benefits, process, cta } = servicesPageContent;
@@ -26,9 +24,7 @@ export default function ServicesPage() {
 
       {/* Services Cards */}
 
-      <Suspense fallback={<Loading />}>
-        <Services />
-      </Suspense>
+      <ServicesList />
 
       {/* Benefits */}
       <section
