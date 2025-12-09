@@ -11,6 +11,7 @@ const Configurator: React.FC<{ services?: IService }> = ({ services }) => {
   const extraFeatures = services.serviceFeatures.filter(
     (f) => f.type !== "STANDARD"
   );
+  console.log("mere");
 
   return (
     <>

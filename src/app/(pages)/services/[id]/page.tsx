@@ -14,13 +14,13 @@ import { IService } from "@/modules/services/domain/types/service.types";
 import { METADATA_BASE, SITE_URL } from "@/shared/utils/config";
 
 interface Props {
-  params: Promise<{ slug: string }>;
+  params: Promise<{ id: string }>;
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-  const slug = (await params).slug;
+  const id = (await params).id;
 
-  const seo = servicesSEO.find((s) => s.id === slug);
+  const seo = servicesSEO.find((s) => s.id === id);
   if (!seo)
     return generateSEO({
       title: "Service Not Found",
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     ...generateSEO({
       title: seo.title,
       description: seo.description,
-      url: `${SITE_URL}/services/${slug}`,
+      url: `${SITE_URL}/services/${id}`,
       image: seo.image,
     }),
     metadataBase: METADATA_BASE,

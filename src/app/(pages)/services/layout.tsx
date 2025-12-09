@@ -19,17 +19,6 @@ export async function generateMetadata(): Promise<Metadata> {
     },
   };
 }
-export default function layout({
-  children,
-  modal,
-}: {
-  children: ReactNode;
-  modal: ReactNode;
-}) {
-  return (
-    <DefaultLayout>
-      {children}
-      {modal}
-    </DefaultLayout>
-  );
+export default function layout({ children }: { children: ReactNode }) {
+  return <DefaultLayout>{children}</DefaultLayout>;
 }
