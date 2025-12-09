@@ -11,7 +11,8 @@ import { servicesSEO } from "@/shared/data/seo/serviceSEO";
 import { generateSEO } from "@/lib/seo";
 import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
 import { IService } from "@/modules/services/domain/types/service.types";
-import { METADATA_BASE, SITE_URL } from "@/shared/utils/config";
+import { buildSEO } from "@/lib/seo/seo.utils";
+import { SITE_URL } from "@/shared/config/env";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -28,13 +29,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     });
 
   return {
-    ...generateSEO({
+    ...buildSEO({
       title: seo.title,
       description: seo.description,
       url: `${SITE_URL}/services/${id}`,
       image: seo.image,
     }),
-    metadataBase: METADATA_BASE,
     other: {
       keywords: seo.keywords.join(", "),
     },

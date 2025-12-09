@@ -9,7 +9,7 @@ import {
   IServiceFeature,
 } from "@/modules/services/domain/types/service.types";
 import { AppError } from "@/shared/utils/AppError";
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 
 export interface IAddServiceOrder {
   client: Partial<IClient>;

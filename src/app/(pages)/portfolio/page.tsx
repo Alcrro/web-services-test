@@ -1,6 +1,6 @@
 import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 import { portfolioSEO } from "@/shared/data/seo/portfolioSEO";
-import { generateSEO } from "@/lib/seo";
+
 import { Metadata } from "next";
 import { Suspense } from "react";
 import PortfolioCta from "@/components/molecules/portfolio/PortfolioCta";
@@ -8,20 +8,12 @@ import PortfolioProjectsClient from "@/components/molecules/portfolio/PortfolioP
 import HeroSection from "@/components/organisms/portfolio/HeroSection";
 import TestimonialsSection from "@/components/organisms/portfolio/TestimonialsSection";
 import { portfolioPageContent } from "@/shared/data/consts/portfololioPage/portfolioPageContent";
-import { METADATA_BASE, SITE_URL } from "@/shared/utils/config";
+
+import { buildSEO } from "@/lib/seo/seo.utils";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
-    ...generateSEO({
-      title: portfolioSEO.title,
-      description: portfolioSEO.description,
-      url: `${SITE_URL}/portfolio`,
-      image: portfolioSEO.openGraph.images[0].url,
-    }),
-    metadataBase: METADATA_BASE,
-    other: {
-      keywords: portfolioSEO.keywords.join(", "),
-    },
+    ...buildSEO(portfolioSEO),
   };
 }
 

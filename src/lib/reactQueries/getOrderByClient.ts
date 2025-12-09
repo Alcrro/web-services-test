@@ -1,4 +1,4 @@
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 import { useQuery } from "@tanstack/react-query";
 
 export function useGetOrderByClient() {

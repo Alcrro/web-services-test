@@ -1,4 +1,4 @@
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 import { getSession } from "@/shared/utils/getSession";
 
 export async function getUserApi(): Promise<{ name: string; email: string }> {

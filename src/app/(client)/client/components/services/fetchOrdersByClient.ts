@@ -1,5 +1,5 @@
 "use server";
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 import { cookies } from "next/headers";
 
 export async function fetchOrdersByClient() {

@@ -3,13 +3,14 @@ import ContactHero from "@/components/molecules/contact/ContactHero";
 import ContactInfo from "@/components/molecules/contact/ContactInfo";
 import ContactTrust from "@/components/molecules/contact/ContactTrust";
 import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
+import { buildSEO } from "@/lib/seo/seo.utils";
 import { contactPageData } from "@/shared/data/consts/contactPage/contactPageData";
+import { contactSEO } from "@/shared/data/seo/contactSEO";
 import { Metadata } from "next";
 
 export async function getMetadata(): Promise<Metadata> {
   return {
-    title: "Contact",
-    description: "Welcome to ALCRRO contact",
+    ...buildSEO(contactSEO),
   };
 }
 const page = () => {

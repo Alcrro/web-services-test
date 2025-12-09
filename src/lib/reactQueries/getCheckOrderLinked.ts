@@ -1,4 +1,4 @@
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 import { toast } from "react-toastify";
 

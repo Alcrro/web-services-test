@@ -1,6 +1,6 @@
 "use server";
 
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 import { revalidatePath } from "next/cache";
 import { cookies } from "next/headers";
 

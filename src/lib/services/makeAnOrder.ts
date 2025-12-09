@@ -2,7 +2,7 @@ import { ContactInfo } from "@/context/useServiceConfiguratorStore";
 import { clientDetailsVerification } from "@/modules/orders/application/validators/validateOrder";
 import { IServiceOrder } from "@/modules/orders/domain/types/order.types";
 import { IServiceFeature } from "@/modules/services/domain/types/service.types";
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 
 export async function sendConfigurator(
   payload: Partial<IServiceOrder>,

@@ -6,7 +6,7 @@ import Testimonials from "@/components/organisms/home/HomeTestimonials";
 import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 import { homePageContent } from "@/shared/data/consts/homePage/homePageContent";
 import { Metadata } from "next";
-import { METADATA_BASE } from "@/shared/utils/config";
+import { METADATA_BASE } from "@/shared/config/env";
 
 export const metadata: Metadata = {
   metadataBase: METADATA_BASE,

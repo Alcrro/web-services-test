@@ -3,7 +3,7 @@ import {
   ICLientFIlters,
 } from "@/modules/clients/domain/types/client.types";
 import { IMetaPagination } from "@/modules/globals/types/types";
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 
 export async function getClientsAPI(
   options?: ICLientFIlters

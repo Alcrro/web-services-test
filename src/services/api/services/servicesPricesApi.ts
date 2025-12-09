@@ -1,4 +1,4 @@
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 
 export async function getServicesPrice(): Promise<
   {

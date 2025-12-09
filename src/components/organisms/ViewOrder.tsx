@@ -1,6 +1,6 @@
 "use client";
 
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 import { useEffect, useState } from "react";
 
 const ViewOrder = ({ id }: { id: string }) => {

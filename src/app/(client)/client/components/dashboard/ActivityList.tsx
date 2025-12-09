@@ -1,7 +1,7 @@
 // ActivityList.tsx
 "use client";
 
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 import Activity from "./Activity";
 import { useQuery } from "@tanstack/react-query";
 

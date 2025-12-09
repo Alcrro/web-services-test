@@ -2,7 +2,7 @@
 import Button from "@/shared/ui/Button";
 import { FormEvent } from "react";
 import Title from "../login/components/Title";
-import { API_URL } from "@/shared/utils/config";
+import { API_URL } from "@/shared/config/env";
 
 const page = () => {
   const actionSubmit = async (e: FormEvent<HTMLFormElement>) => {
