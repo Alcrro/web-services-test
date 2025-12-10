@@ -11,6 +11,7 @@ import dynamic from "next/dynamic";
 export async function generateMetadata(): Promise<Metadata> {
   return {
     ...buildSEO(portfolioSEO),
+    alternates: { canonical: "/portfolio" },
   };
 }
 
@@ -26,7 +27,7 @@ const Portfolio = async ({
 
   // Filter projects server-side
   const filteredProjects =
-    searchParamsValue === "all"
+    searchParamsValue !== undefined && searchParamsValue === "all"
       ? projects
       : projects.filter((p) => p.category === searchParamsValue);
 
