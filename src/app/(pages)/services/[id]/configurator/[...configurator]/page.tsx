@@ -3,6 +3,7 @@ import { getFutureServiceById } from "@/services/api/services/servicesApi";
 import SeniorWebServiceConfigurator from "@/components/organisms/service/configurator/ServieceConfigurator";
 import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
 import { IService } from "@/modules/services/domain/types/service.types";
+import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 
 const page = async ({
   params,
@@ -26,12 +27,9 @@ const page = async ({
     );
 
   return (
-    <>
+    <DefaultLayout>
       <SeniorWebServiceConfigurator params={configurator} services={services} />
-    </>
-    // <ConfiguratorModal>
-    //   <Configurator service={services[0]} />
-    // </ConfiguratorModal>
+    </DefaultLayout>
   );
 };
 

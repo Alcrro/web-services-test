@@ -1,15 +1,7 @@
 import ServicesCards from "@/components/molecules/service/card/ServicesCards";
-import { getFutureService } from "@/services/api/services/servicesApi";
-import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
+import { IService } from "../domain/types/service.types";
 
-const Services = async () => {
-  const services = await getDataCachedFromDB(
-    getFutureService,
-    "servicesData",
-    60,
-    {}
-  );
-
+const Services = ({ services }: { services: IService[] }) => {
   return <ServicesCards services={services} />;
 };
 
