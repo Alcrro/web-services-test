@@ -8,7 +8,23 @@ import ServicesList from "@/components/organisms/ServicesList";
 import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 import { Suspense } from "react";
 import Loading from "./loading";
+import { Metadata } from "next";
+import { buildSEO } from "@/lib/seo/seo.utils";
+import { servicesSEO } from "@/shared/data/seo/servicesSEO";
 
+export async function generateMetadata(): Promise<Metadata> {
+  const seoObjects = servicesSEO.map(buildSEO);
+
+  const title = seoObjects.map((s) => s.title).join(" | ");
+  const description = seoObjects.map((s) => s.description).join(". ");
+  const openGraph = seoObjects[0].openGraph || {};
+
+  return {
+    title,
+    description,
+    openGraph,
+  };
+}
 export default function ServicesPage() {
   const { hero, faq, benefits, process, cta } = servicesPageContent;
 

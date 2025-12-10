@@ -7,7 +7,7 @@ import { getFutureServiceById } from "@/services/api/services/servicesApi";
 
 // app/services/[slug]/page.tsx
 import { Metadata } from "next";
-import { servicesSEO } from "@/shared/data/seo/serviceSEO";
+import { servicesSEO } from "@/shared/data/seo/servicesSEO";
 import { generateSEO } from "@/lib/seo";
 import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
 import { IService } from "@/modules/services/domain/types/service.types";
