@@ -27,7 +27,7 @@ const Portfolio = async ({
 
   // Filter projects server-side
   const filteredProjects =
-    searchParamsValue !== undefined && searchParamsValue === "all"
+    searchParamsValue === undefined || searchParamsValue === "all"
       ? projects
       : projects.filter((p) => p.category === searchParamsValue);
 

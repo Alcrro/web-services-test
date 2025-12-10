@@ -7,10 +7,11 @@ import { servicesPageContent } from "@/shared/data/consts/servicePage/servicePag
 import ServicesList from "@/components/organisms/ServicesList";
 import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 import { Suspense } from "react";
-import Loading from "./loading";
+
 import { Metadata } from "next";
 import { buildSEO } from "@/lib/seo/seo.utils";
 import { servicesSEO } from "@/shared/data/seo/servicesSEO";
+import ServiceCardSkeleton from "@/components/skeletons/ServiceCardSkeleton";
 
 export async function generateMetadata(): Promise<Metadata> {
   const seoObjects = servicesSEO.map(buildSEO);
@@ -41,7 +42,7 @@ export default function ServicesPage() {
 
         {/* Services Cards */}
 
-        <Suspense fallback={<Loading />}>
+        <Suspense fallback={<ServiceCardSkeleton />}>
           <ServicesList />
         </Suspense>
 

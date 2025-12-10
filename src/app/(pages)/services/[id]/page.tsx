@@ -13,6 +13,7 @@ import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
 import { IService } from "@/modules/services/domain/types/service.types";
 import { buildSEO } from "@/lib/seo/seo.utils";
 import { SITE_URL } from "@/shared/config/env";
+import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 
 interface Props {
   params: Promise<{ id: string }>;
@@ -60,10 +61,12 @@ export default async function Page({
     return <p>Service not found</p>;
 
   return (
-    <div className="">
-      <ServiceCard service={services}>
-        <ServicesList features={services.serviceFeatures} />
-      </ServiceCard>
-    </div>
+    <DefaultLayout>
+      <div className="">
+        <ServiceCard service={services}>
+          <ServicesList features={services.serviceFeatures} />
+        </ServiceCard>
+      </div>
+    </DefaultLayout>
   );
 }

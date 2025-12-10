@@ -36,6 +36,8 @@ export default function PortfolioProjectsClient({
   }, [projects]);
 
   const handleFilterChange = (category: string) => {
+    if (activeFilter === category) return;
+
     const params = new URLSearchParams(searchParams.toString());
     params.set("services", category);
     router.push(`?${params.toString()}`);
