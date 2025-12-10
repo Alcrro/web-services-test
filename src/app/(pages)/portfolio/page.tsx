@@ -2,7 +2,7 @@ import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 import { portfolioSEO } from "@/shared/data/seo/portfolioSEO";
 
 import { Metadata } from "next";
-import { Suspense } from "react";
+
 import PortfolioCta from "@/components/molecules/portfolio/PortfolioCta";
 import PortfolioProjectsClient from "@/components/molecules/portfolio/PortfolioProjectsClient";
 import HeroSection from "@/components/organisms/portfolio/HeroSection";
@@ -17,9 +17,20 @@ export async function generateMetadata(): Promise<Metadata> {
   };
 }
 
-const Portfolio = () => {
+const Portfolio = async ({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string>>;
+}) => {
+  const searchP = await searchParams;
+
   const { hero, projects, filters, testimonials, cta } = portfolioPageContent;
 
+  const searchParamsValue = Object.values(searchP)[0];
+
+  const filterProjects = projects.filter(
+    (f) => f.category === searchParamsValue
+  );
   return (
     <DefaultLayout>
       <main className="space-y-24 mx-auto">
@@ -29,9 +40,11 @@ const Portfolio = () => {
         </section>
         {/* Filters && Projects Grid */}
         <section>
-          <Suspense fallback={"fallback"}>
-            <PortfolioProjectsClient projects={projects} filters={filters} />
-          </Suspense>
+          <PortfolioProjectsClient
+            projects={searchParamsValue === "all" ? projects : filterProjects}
+            filters={filters}
+            searchParams={searchP}
+          />
         </section>
         {/* Testimonials */}
         {testimonials && (

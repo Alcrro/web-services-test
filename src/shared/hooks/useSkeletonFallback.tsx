@@ -1,32 +1,16 @@
 import { Dispatch, SetStateAction, useEffect } from "react";
 
-export const useSkeletonFallback = <T,>({
-  filterKey,
-  data,
-  setVisibleProjects,
+export const useSkeletonFallback = ({
   setLoading,
 }: {
-  filterKey: string;
-  data: T[];
-  setVisibleProjects: Dispatch<SetStateAction<T[]>>;
   setLoading: Dispatch<SetStateAction<boolean>>;
 }) => {
-  const services = filterKey;
-
   useEffect(() => {
     setLoading(true);
-    const filtered =
-      !services || services.toLowerCase() === "all"
-        ? data
-        : data.filter(
-            (p) =>
-              (p as unknown as { category: string }).category.toLowerCase() ===
-              services.toLowerCase()
-          );
+
     const timer = setTimeout(() => {
-      setVisibleProjects(filtered);
       setLoading(false);
     }, 1600);
     return () => clearTimeout(timer);
-  }, [filterKey, data, services, setLoading, setVisibleProjects]);
+  }, [setLoading]);
 };
