@@ -1,15 +1,12 @@
 import DefaultLayout from "@/components/templates/defaultLayout/DefaultLayout";
 import { portfolioSEO } from "@/shared/data/seo/portfolioSEO";
-
 import { Metadata } from "next";
-
 import PortfolioCta from "@/components/molecules/portfolio/PortfolioCta";
 import PortfolioProjectsClient from "@/components/molecules/portfolio/PortfolioProjectsClient";
 import HeroSection from "@/components/organisms/portfolio/HeroSection";
-import TestimonialsSection from "@/components/organisms/portfolio/TestimonialsSection";
 import { portfolioPageContent } from "@/shared/data/consts/portfololioPage/portfolioPageContent";
-
 import { buildSEO } from "@/lib/seo/seo.utils";
+import dynamic from "next/dynamic";
 
 export async function generateMetadata(): Promise<Metadata> {
   return {
@@ -23,14 +20,22 @@ const Portfolio = async ({
   searchParams: Promise<Record<string, string>>;
 }) => {
   const searchP = await searchParams;
+  const searchParamsValue = Object.values(searchP)[0];
 
   const { hero, projects, filters, testimonials, cta } = portfolioPageContent;
 
-  const searchParamsValue = Object.values(searchP)[0];
+  // Filter projects server-side
+  const filteredProjects =
+    searchParamsValue === "all"
+      ? projects
+      : projects.filter((p) => p.category === searchParamsValue);
 
-  const filterProjects = projects.filter(
-    (f) => f.category === searchParamsValue
+  // Lazy-load Testimonials
+  const Testimonials = dynamic(
+    () => import("@/components/organisms/portfolio/TestimonialsSection"),
+    { ssr: true }
   );
+
   return (
     <DefaultLayout>
       <main className="space-y-24 mx-auto">
@@ -41,15 +46,15 @@ const Portfolio = async ({
         {/* Filters && Projects Grid */}
         <section>
           <PortfolioProjectsClient
-            projects={searchParamsValue === "all" ? projects : filterProjects}
+            projects={filteredProjects}
             filters={filters}
-            searchParams={searchP}
+            activeFilter={searchParamsValue}
           />
         </section>
         {/* Testimonials */}
         {testimonials && (
           <section>
-            <TestimonialsSection testimonials={testimonials} />
+            <Testimonials testimonials={testimonials} />
           </section>
         )}
         {/* Final CTA */}
