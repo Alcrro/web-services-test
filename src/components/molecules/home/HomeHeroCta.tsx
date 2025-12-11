@@ -7,14 +7,14 @@ const HomeHeroCta = () => {
       <Button
         variant="primary"
         href={homePageContent.hero.cta.primary.link}
-        className="w-full max-w-60 animate-scaleUp "
+        className="w-full max-w-60 animate-scaleUp"
       >
         {homePageContent.hero.cta.primary.text}
       </Button>
       <Button
         variant="primary"
         href={homePageContent.hero.cta.secondary.link}
-        className="w-full max-w-60 animate-scaleUp "
+        className="w-full max-w-60 animate-scaleUp"
       >
         {homePageContent.hero.cta.secondary.text}
       </Button>
