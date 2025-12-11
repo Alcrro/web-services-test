@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { FC, HTMLAttributes } from "react";
+import { FC, HTMLAttributes } from "react";
 import { IconType } from "react-icons/lib";
 import style from "@/components/styles/footerIconLink.module.scss";
 
@@ -23,8 +23,9 @@ const FooterIconLink: FC<FooterIconLinkProps> = ({
       data-disabled={disabled}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={`Open ${name}`}
     >
-      <Icon />
+      <Icon aria-hidden="true" />
     </Link>
   );
 };

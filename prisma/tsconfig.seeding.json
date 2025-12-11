@@ -1,0 +1,10 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "../src",
+    "paths": { "@/*": ["*"] },
+    "module": "commonjs",
+    "moduleResolution": "node"
+  },
+  "include": ["../src/**/*", "./seed.ts"]
+}

@@ -1,5 +1,5 @@
 import { IHomePartners } from "@/shared/data/consts/homePage/homePageContent";
-import React, { FC } from "react";
+import { FC } from "react";
 import style from "@/components/styles/partnerList.module.scss";
 import Image from "next/image";
 import { linkString } from "@/shared/utils/generatePartnerMarqueeLink";

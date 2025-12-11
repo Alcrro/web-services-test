@@ -1,7 +1,12 @@
-import React from "react";
 import style from "@/components/styles/footerTitle.module.scss";
+import Description from "@/shared/ui/Description";
+
 const FooterTitle = ({ title }: { title: string }) => {
-  return <li className={`${style.li}`}>{title}</li>;
+  return (
+    <Description as={"p"} className={`${style.li}`}>
+      {title}
+    </Description>
+  );
 };
 
 export default FooterTitle;

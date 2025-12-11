@@ -27,7 +27,7 @@ import {
   FileText,
   Key,
 } from "lucide-react";
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 
 const ServicesListIconMapper = (): Record<string, React.ReactNode> => {
   return useMemo(
