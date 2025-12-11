@@ -1,0 +1,9 @@
+.review {
+  flex: 0 0 auto; // mobile: 1 card takes full width
+  // min-width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  background: var(--color-bg-section);
+  border-radius: 8px;
+  text-align: center;
+}

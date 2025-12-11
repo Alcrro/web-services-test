@@ -1,0 +1,13 @@
+.client_form_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1rem 2rem;
+  justify-content: start; /* sau center dacă vrei spațiu liber la dreapta */
+  //   width: 100%; /* ocupă tot spațiul rămas după dashboard */
+  max-width: calc(100% - 320px); /* 2rem gap între dashboard și form */
+  margin: 0 auto;
+  @media (max-width: 540px) {
+    grid-template-columns: 1fr;
+    max-width: none;
+  }
+}
