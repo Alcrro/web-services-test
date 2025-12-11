@@ -1,7 +1,0 @@
-model Client {
-  id      String   @id @default(uuid())
-  name    String
-  email   String   @unique
-  phone   String?
-  orders  ServiceOrder[]
-}

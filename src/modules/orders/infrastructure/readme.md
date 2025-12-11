@@ -1,2 +1,0 @@
-db repository
-prisma mapping
