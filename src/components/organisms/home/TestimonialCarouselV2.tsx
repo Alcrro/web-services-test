@@ -1,9 +1,11 @@
 "use client";
+
 import { ReactNode, useRef, useState } from "react";
 import styles from "@/components/styles/testimonialCarouselV2.module.scss";
 import NavigationButton from "@/components/atoms/buttons/NavigationButton";
 import { FaArrowAltCircleLeft, FaArrowCircleRight } from "react-icons/fa";
 import useCarousel from "@/shared/hooks/useCarousel";
+
 
 const TestimonialCarouselV2 = ({ children }: { children: ReactNode[] }) => {
   const trackRef = useRef<HTMLDivElement>(null);
@@ -19,6 +21,7 @@ const TestimonialCarouselV2 = ({ children }: { children: ReactNode[] }) => {
     setCanNext,
     styles,
   });
+ 
 
   return (
     <div className={styles.wrapper}>
