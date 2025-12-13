@@ -15,7 +15,7 @@ const FaqItem: React.FC<FaqItemProps> = ({ faq, index }) => {
   const { modals, toggle } = useModalStore((store) => store);
   const isOpen = !!modals[index];
   return (
-    <li className="faqItem ">
+    <li className="faqItem">
       <FaqButton
         question={faq.question}
         isOpen={isOpen}
