@@ -1,0 +1,4 @@
+.tableFiller {
+  --rows-missing: attr(data-rows-missing number);
+  height: calc(var(--rows-missing) * 57px);
+}

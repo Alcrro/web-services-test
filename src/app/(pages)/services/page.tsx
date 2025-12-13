@@ -47,30 +47,24 @@ export default function ServicesPage() {
         </Suspense>
 
         {/* Benefits */}
-        <section
-          className="p-10 rounded-2xl shadow-inner"
-          style={{ backgroundColor: "var(--color-bg-section)" }}
-        >
+        <section className="p-10 rounded-2xl shadow-inner bg-(--color-bg-section)">
           <ServicesBenefits benefits={benefits} />
         </section>
 
         {/* Process */}
-        <section>
+        <section aria-label="Our Process">
           <ServiceProcess process={process} />
         </section>
 
         {/* FAQ */}
-        <section>
+        <section aria-label="Frequently Asked Questions">
           <ServiceFaq faq={faq} />
         </section>
 
         {/* Final CTA */}
         <section
-          className="text-center py-16 rounded-3xl shadow-lg"
-          style={{
-            backgroundColor: "var(--color-accent)",
-            color: "var(--color-bg)",
-          }}
+          className="text-center py-16 rounded-3xl shadow-lg bg-(--color-accent) text-(--color-bg)"
+          aria-label="Call to Action"
         >
           <ServiceCta cta={cta} />
         </section>

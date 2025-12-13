@@ -1,0 +1,51 @@
+.marquee_wrapper {
+  overflow-x: auto;
+  position: relative;
+  width: 100%;
+
+  -ms-overflow-style: none; /* IE 10+ */
+  scrollbar-width: none; /* Firefox */
+
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Edge */
+  }
+}
+
+.marquee_content {
+  display: flex;
+  gap: 2rem;
+  animation: marquee 20s linear infinite;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  animation: marqueeOnce 20s linear forwards;
+
+  @media (max-width: 720px) {
+    animation: marquee 20s linear infinite;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%); // jumătatea conținutului duplicat
+  }
+}
+
+@keyframes marqueeOnce {
+  0% {
+    transform: translateX(100vw); /* afară din dreapta */
+  }
+  100% {
+    transform: translateX(0); /* poziția finală */
+  }
+}
+.marquee_wrapper:hover .marquee_content {
+  animation-play-state: paused;
+}
+/* duplică conținutul în JS sau cu CSS ::after pentru loop */
