@@ -21,7 +21,7 @@ const FaqButton: React.FC<FaqButtonProps> = ({
       aria-expanded={isOpen}
       aria-controls={ariaControls}
     >
-      <span className="text-md">{question}</span>
+      <span className="text-md ">{question}</span>
       <span className={styles.icon}>{isOpen ? "−" : "+"}</span>
     </Button>
   );
