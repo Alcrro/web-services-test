@@ -1,3 +1,4 @@
+export const revalidate = 86400
 import ServiceCta from "@/components/molecules/service/ServiceCta";
 import ServiceFaq from "@/components/molecules/service/ServiceFaq";
 import ServiceHero from "@/components/molecules/service/ServiceHero";
