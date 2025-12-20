@@ -1,4 +1,10 @@
-import { Dispatch, RefObject, SetStateAction, useLayoutEffect } from "react";
+import {
+  Dispatch,
+  RefObject,
+  SetStateAction,
+  useCallback,
+  useLayoutEffect,
+} from "react";
 
 interface ICarouselProps {
   trackRef: RefObject<HTMLDivElement | null>;
@@ -25,7 +31,7 @@ const useCarousel = ({
 
     setCardWidth(card.offsetWidth + 16);
     const resizeObserver = new ResizeObserver((entries) => {
-      for (let entry of entries) {
+      for (const entry of entries) {
         if (entry.target instanceof HTMLElement) {
           setCardWidth(entry.target.offsetWidth + 16);
         }
@@ -34,18 +40,18 @@ const useCarousel = ({
     if (card) resizeObserver.observe(card);
 
     return () => resizeObserver.disconnect();
-  }, []);
+  }, [setCardWidth, styles.card, trackRef]);
 
   const scrollAmount = () => cardWidth;
 
-  const updateButtons = () => {
+  const updateButtons = useCallback(() => {
     const track = trackRef.current;
     if (!track) return;
 
     const maxScroll = track.scrollWidth - track.clientWidth;
     setCanPrev(track.scrollLeft > 0);
     setCanNext(track.scrollLeft < maxScroll - 5);
-  };
+  }, [setCanPrev, setCanNext, trackRef]);
 
   const handleNext = () => {
     const track = trackRef.current;
@@ -68,7 +74,7 @@ const useCarousel = ({
 
     track.addEventListener("scroll", updateButtons);
     return () => track.removeEventListener("scroll", updateButtons);
-  }, []);
+  }, [trackRef, updateButtons]);
 
   return { handleNext, handlePrev };
 };

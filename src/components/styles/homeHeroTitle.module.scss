@@ -1,0 +1,15 @@
+.titleC {
+  font-size: clamp(1rem, 5vw, 2rem);
+  /* Initial state for animation */
+  color: var(--color-text);
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeUp 0.7s forwards ease-out;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
