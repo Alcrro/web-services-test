@@ -1,0 +1,22 @@
+model ServiceOrder {
+  id              String   @id @default(uuid())
+  projectName     String?
+  serviceId       Int
+  service         FutureService @relation(fields: [serviceId], references: [id])
+  clientId        String
+  client          Client   @relation(fields: [clientId], references: [id])
+  status          ServiceOrderStatus @default(NEW)
+  initialPrice    Decimal @default(0)
+  totalPrice      Decimal 
+  requirements    String?
+  createdAt       DateTime @default(now())
+  updatedAt       DateTime? @updatedAt
+
+  // Relation for additional orders
+  additionalItems ServiceOrderItem[]
+  tasks           Task[]             // task-uri de implementare
+
+  
+  @@index([status])
+  @@index([clientId])
+}
