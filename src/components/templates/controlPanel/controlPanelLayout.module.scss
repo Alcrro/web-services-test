@@ -1,0 +1,16 @@
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1rem;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+
+  // display: grid;
+  // grid-template-columns: minmax(0, 240px) minmax(300px, 1fr);
+  // gap: 1rem;
+  // padding: 1rem;
+}

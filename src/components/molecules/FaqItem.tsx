@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 import { IHomeFAQ } from "@/shared/data/consts/homePage/homePageContent";
 import FaqButton from "../atoms/buttons/FaqButton";
 import FaqAnswer from "../atoms/FaqAnswer";
