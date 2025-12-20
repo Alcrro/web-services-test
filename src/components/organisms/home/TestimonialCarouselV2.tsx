@@ -1,5 +1,5 @@
 "use client";
-
+import { ReactNode } from "react";
 const TestimonialCarouselV2 = ({ children }: { children: ReactNode[] }) => {
   const trackRef = useRef<HTMLDivElement>(null);
   const [canPrev, setCanPrev] = useState(false);
