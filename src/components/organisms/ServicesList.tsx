@@ -1,14 +1,9 @@
+import { ServicesAction } from "@/modules/services/application/services.action";
 import Services from "@/modules/services/components/Services";
-import { getFutureService } from "@/services/api/services/servicesApi";
-import { getDataCachedFromDB } from "@/shared/utils/getDataCached";
 
 const ServicesList = async () => {
-  const services = await getDataCachedFromDB(
-    getFutureService,
-    "servicesData",
-    60,
-    {}
-  );
+  const servicesAction = new ServicesAction();
+  const services = await servicesAction.getAllServices({});
 
   return <Services services={services} />;
 };
