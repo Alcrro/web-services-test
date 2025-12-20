@@ -1,0 +1,8 @@
+.service_card {
+  max-height: 800px;
+  height: 100%;
+  background-color: var(--color-bg-section);
+  @media (max-width: 320px) {
+    max-height: unset;
+  }
+}
