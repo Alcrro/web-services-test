@@ -1,5 +1,5 @@
-import Invoice from "@/components/organisms/invoice/Invoice";
-import { OrdersAction } from "@/modules/orders/application/orders.action";
+// import Invoice from "@/components/organisms/invoice/Invoice";
+// import { OrdersAction } from "@/modules/orders/application/orders.action";
 
 export default async function InvoicePDFPage({
   params,
@@ -8,10 +8,15 @@ export default async function InvoicePDFPage({
 }) {
   const { id } = await params;
 
-  const orderAction = new OrdersAction();
-  const order = await orderAction.getOneOrderInvoice(id);
+  // const orderAction = new OrdersAction();
+  // const order = await orderAction.getOneOrderInvoice(id);
 
-  if (!order) return <div>Order not found</div>;
+  // if (!order) return <div>Order not found</div>;
 
-  return <Invoice order={order} />;
+  return (
+    <>
+      {/* <Invoice order={order} />; */}
+      invoice {id}
+    </>
+  );
 }

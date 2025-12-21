@@ -1,6 +1,6 @@
 "use client";
 import Button from "@/shared/ui/Button";
-import DownloadInvoicePdf from "@/components/organisms/invoice/DownloadInvoicePdf";
+// import DownloadInvoicePdf from "@/components/organisms/invoice/DownloadInvoicePdf";
 import { AnimatedCell } from "@/components/ui/AnimatedText";
 import { Eye } from "lucide-react";
 import { FC } from "react";
@@ -32,7 +32,8 @@ export const ActionHeaderColumn: FC<ActionHeaderProps> = ({
       </AnimatedCell>
 
       <AnimatedCell isLoading={isLoading} placeholderWidth="4">
-        <DownloadInvoicePdf id={id} />
+        {/* <DownloadInvoicePdf id={id} /> */}
+        pdfD
       </AnimatedCell>
     </div>
   );

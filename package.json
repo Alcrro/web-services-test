@@ -31,6 +31,8 @@
     "bootstrap-icons": "^1.13.1",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "echarts": "^6.0.0",
+    "echarts-for-react": "^3.0.5",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.544.0",
     "next": "^16.0.7",
@@ -50,9 +52,6 @@
     "zustand": "^5.0.8"
   },
   "devDependencies": {
-    "echarts": "^6.0.0",
-    "puppeteer-core": "^24.34.0",
-    "echarts-for-react": "^3.0.5",
     "@eslint/eslintrc": "^3",
     "@next/bundle-analyzer": "^16.0.8",
     "@types/puppeteer-core": "^5.4.0",
