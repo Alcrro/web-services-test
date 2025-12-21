@@ -13,11 +13,13 @@ const ServiceProcess = ({ process }: { process: ServiceProcessSection }) => {
         {process.title}
       </Title>
       <div className="flex flex-col items-center">
-        <ol className="relative border-l ml-6 bg-(--color-border)">
-          {process.steps.map((step) => (
-            <ServicesProcessStepsListItem key={step.step} step={step} />
-          ))}
-        </ol>
+        <div className="bg-(--color-border) rounded-lg pr-2">
+          <ol className="relative border-l ml-6 mt-10">
+            {process.steps.map((step) => (
+              <ServicesProcessStepsListItem key={step.step} step={step} />
+            ))}
+          </ol>
+        </div>
       </div>
     </>
   );

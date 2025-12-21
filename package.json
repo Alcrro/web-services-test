@@ -55,6 +55,7 @@
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@next/bundle-analyzer": "^16.0.8",
+    "@types/puppeteer-core": "^5.4.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
