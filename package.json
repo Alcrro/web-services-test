@@ -48,13 +48,13 @@
     "tailwindcss": "^4.1.13",
     "@types/bcrypt": "^6.0.0",
     "@types/node": "^20",
+    "puppeteer": "^24.23.0",
     "@types/pg": "^8.15.5",
     "@types/jsonwebtoken": "^9.0.10"
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
     "@next/bundle-analyzer": "^16.0.8",
-    "puppeteer": "^24.23.0",
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
