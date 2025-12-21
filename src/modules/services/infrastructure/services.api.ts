@@ -8,14 +8,14 @@ export class ServicesAPI extends BaseAPI {
   async getAllServices(options: IFilterServices): Promise<IService[]> {
     const urlConfigured = configureParams<IService>(options);
 
-    return this.request(urlConfigured, {
+    return await this.request(urlConfigured, {
       method: "GET",
       next: { revalidate: 864000 },
     });
   }
 
   async getOneServices(id: string): Promise<IService> {
-    return this.request(`/${id}`, {
+    return await this.request(`/${id}`, {
       method: "GET",
       next: { revalidate: 864000 },
     });

@@ -9,7 +9,7 @@ const ServicesProcessStepsListItem: FC<IServiceProcessStepItemProps> = ({
   step,
 }) => {
   return (
-    <li className="mb-10 ml-6">
+    <li className="mb-10 ml-6 pt-2 pr-2">
       <div className="absolute w-3 h-3 rounded-full -left-1.5 mt-1.5 bg-(--color-accent)"></div>
       <Title
         as={"h3"}
