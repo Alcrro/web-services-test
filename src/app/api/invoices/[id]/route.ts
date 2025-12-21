@@ -1,10 +1,10 @@
 import { NextRequest } from "next/server";
-import puppeteer from "puppeteer";
 
 export async function GET(
   _req: NextRequest,
   params: { params: Promise<{ id: string }> }
 ) {
+  const puppeteer = await import("puppeteer-core");
   const id = (await params.params).id;
 
   const accessToken = _req.cookies.get("accessToken")?.value;
